@@ -1,0 +1,463 @@
+{
+  "author": "",
+  "category": "Advanced",
+  "dimension": "",
+  "extensionNamespace": "",
+  "fullName": "AdvancedRandomization",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiPz48IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0ibWRpLWRpY2UtbXVsdGlwbGUtb3V0bGluZSIgd2lkdGg9IjI0IiBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiPjxwYXRoIGQ9Ik0xNCA4QzEzLjQ1IDggMTMgNy41NSAxMyA3UzEzLjQ1IDYgMTQgNkMxNC41NSA2IDE1IDYuNDUgMTUgN0MxNSA3LjU1IDE0LjU1IDggMTQgOE0xMiAxMlYxOUg1VjEySDEyTTEyLjc4IDEwSDQuMjJDMy41NSAxMCAzIDEwLjU1IDMgMTEuMjJWMTkuNzhDMyAyMC40NSAzLjU1IDIxIDQuMjIgMjFIMTIuNzhDMTMuNDUgMjEgMTQgMjAuNDUgMTQgMTkuNzhWMTEuMjJDMTQgMTAuNTUgMTMuNDUgMTAgMTIuNzggMTBNMTkuNzggM0gxMS4yMkMxMC41NSAzIDEwIDMuNTUgMTAgNC4yMlY4SDEyVjVIMTlWMTJIMTZWMTRIMTkuNzhDMjAuNDUgMTQgMjEgMTMuNDUgMjEgMTIuNzhWNC4yMkMyMSAzLjU1IDIwLjQ1IDMgMTkuNzggM00xNyA4QzE2LjQ1IDggMTYgNy41NSAxNiA3UzE2LjQ1IDYgMTcgNkMxNy41NSA2IDE4IDYuNDUgMTggN0MxOCA3LjU1IDE3LjU1IDggMTcgOE0xNyAxMUMxNi40NSAxMSAxNiAxMC41NSAxNiAxMFMxNi40NSA5IDE3IDlDMTcuNTUgOSAxOCA5LjQ1IDE4IDEwQzE4IDEwLjU1IDE3LjU1IDExIDE3IDExTTcgMTVDNi40NSAxNSA2IDE0LjU1IDYgMTRTNi40NSAxMyA3IDEzQzcuNTUgMTMgOCAxMy40NSA4IDE0QzggMTQuNTUgNy41NSAxNSA3IDE1TTEwIDE4QzkuNDUgMTggOSAxNy41NSA5IDE3UzkuNDUgMTYgMTAgMTZDMTAuNTUgMTYgMTEgMTYuNDUgMTEgMTdDMTEgMTcuNTUgMTAuNTUgMTggMTAgMTgiIC8+PC9zdmc+",
+  "name": "AdvancedRandom",
+  "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/b5541a848a3f9ed055c297254f11490e49096b7315883c70151c42fa4878f73e_dice-multiple-outline.svg",
+  "shortDescription": "Adds Seeded and Weighted Randomization!",
+  "version": "1.1.0",
+  "description": [
+    "This extension adds seeded and weighted randomization to your game.",
+    "",
+    "Daily Seeded Randomization:",
+    "Daily seeded randomization randomizes a number between 1 and a maximum value based on the day, giving the same output until the date changes.",
+    "",
+    "Weighted Randomization:",
+    "Weighted randomization randomizes the children of a variable based on their weights.",
+    "Example: Apple (Value: 100) Orange (Value: 10) Banana (Value: 30) Apple would get chosen much more often since it's value is 100, while orange would get chosen the least often since it's value is 10.",
+    ""
+  ],
+  "tags": [
+    "random",
+    "advanced"
+  ],
+  "authorIds": [
+    "EYplEy8jvsVO4FsPdyYLmgvd0ta2"
+  ],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [
+    {
+      "name": "Day",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "CurrentSeedDaily",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "Child",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "ChildName",
+      "type": "string",
+      "value": "0"
+    },
+    {
+      "name": "Total",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "RandomNumberWeighted",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "CulmativeSum",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "StructureVariable",
+      "type": "structure",
+      "children": []
+    },
+    {
+      "name": "RandomIndexNonRepeat",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "name": "RandomItemNonRepeat",
+      "type": "string",
+      "value": "0"
+    },
+    {
+      "name": "LastItemNonRepeat",
+      "type": "string",
+      "value": "0"
+    },
+    {
+      "name": "StructureVariableNonRepeat",
+      "type": "structure",
+      "children": []
+    },
+    {
+      "name": "CustomSeeds",
+      "type": "structure",
+      "children": []
+    }
+  ],
+  "eventsFunctions": [
+    {
+      "description": "Returns a random number between 1 and the maximum value, seeded based on the input.",
+      "fullName": "Custom Seeded Random",
+      "functionType": "Expression",
+      "name": "CustomSeededRandomize",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "VariableChildExists2"
+              },
+              "parameters": [
+                "CustomSeeds",
+                "SeedName"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "CustomSeeds[SeedName]",
+                "=",
+                "SeedNumber"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "CustomSeeds[SeedName]",
+                "=",
+                "mod(CustomSeeds[SeedName] * 1664525 + 1013904223, 4294967296)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "mod(CustomSeeds[SeedName] * 9973, Maximum) + 1"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
+      "parameters": [
+        {
+          "description": "Maximum Value",
+          "name": "Maximum",
+          "type": "expression"
+        },
+        {
+          "description": "Seed Name",
+          "name": "SeedName",
+          "type": "string"
+        },
+        {
+          "description": "Seed Number",
+          "name": "SeedNumber",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Returns a random number between 1 and the maximum value, seeded based on the day.",
+      "fullName": "Daily Seeded Random",
+      "functionType": "Expression",
+      "name": "DailySeededRandomize",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Day",
+                "=",
+                "(Time(\"year\")* 1009)+Time(\"day\")"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "CurrentSeedDaily",
+                "=",
+                "Day"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "CurrentSeedDaily",
+                "=",
+                "mod(CurrentSeedDaily * 1664525 + 1013904223, 4294967296)"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetReturnNumber"
+              },
+              "parameters": [
+                "mod(CurrentSeedDaily * 9973, Maximum) + 1"
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "expression"
+      },
+      "parameters": [
+        {
+          "description": "Maximum Value",
+          "name": "Maximum",
+          "type": "expression"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Randomly returns the name of a child of a structure, using the structure's child's values as weights.",
+      "fullName": "Weighted Randomization",
+      "functionType": "StringExpression",
+      "name": "WeightedRandomize",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Total",
+                ">",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Total",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "CopyArgumentToVariable2"
+              },
+              "parameters": [
+                "\"Structure\"",
+                "StructureVariable"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEachChildVariable",
+          "iterableVariableName": "StructureVariable",
+          "valueIteratorVariableName": "Child",
+          "keyIteratorVariableName": "",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "Total",
+                "+",
+                "Child"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "RandomNumberWeighted",
+                "=",
+                "RandomInRange(1, Total)-1"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "CulmativeSum",
+                "=",
+                "0"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::ForEachChildVariable",
+          "iterableVariableName": "StructureVariable",
+          "valueIteratorVariableName": "Child",
+          "keyIteratorVariableName": "ChildName",
+          "conditions": [
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "Total",
+                "!=",
+                "0"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "CulmativeSum",
+                "+",
+                "Child"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "RandomNumberWeighted",
+                    "<",
+                    "CulmativeSum"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "Total",
+                    "!=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "Total",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetReturnString"
+                  },
+                  "parameters": [
+                    "ChildName"
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [
+        {
+          "description": "Structure Variable",
+          "name": "Structure",
+          "type": "variable"
+        }
+      ],
+      "objectGroups": []
+    }
+  ],
+  "eventsFunctionsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "functionName": "CustomSeededRandomize"
+      },
+      {
+        "functionName": "DailySeededRandomize"
+      },
+      {
+        "functionName": "WeightedRandomize"
+      }
+    ]
+  },
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
+}
