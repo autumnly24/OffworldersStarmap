@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.15911838846839607,
+    "zoomFactor": 0.47535850871272545,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -151,44 +151,8 @@
   ],
   "variables": [
     {
-      "name": "IsAltClicking",
-      "persistentUuid": "b3212198-ea7a-4468-acce-a9494605d6d0",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "SelectedObjectUUID",
-      "persistentUuid": "53815d22-000f-4c4f-a950-a961952dd48c",
-      "type": "string",
-      "value": ""
-    },
-    {
-      "name": "CameraMovementSpeed",
-      "persistentUuid": "02f508e0-a2bf-404c-90dc-814856a835c7",
-      "type": "number",
-      "value": 4
-    },
-    {
       "name": "Paused",
       "persistentUuid": "65186404-7bdc-4755-909d-5d12c8e816f7",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "SelectedX",
-      "persistentUuid": "40741842-71c5-4252-953a-9910bba61930",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "SelectedY",
-      "persistentUuid": "69c6c43c-3165-49e4-a8dd-8308d89280b4",
-      "type": "number",
-      "value": 0
-    },
-    {
-      "name": "HasSelectedPosition",
-      "persistentUuid": "63033221-a683-491f-92ea-2eba22ffbbde",
       "type": "boolean",
       "value": false
     },
@@ -217,30 +181,6 @@
       "value": false
     },
     {
-      "name": "SettingsMenuOpen",
-      "persistentUuid": "a2630fa2-d20d-4131-9368-96fefeae4b32",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "BloomOn",
-      "persistentUuid": "0bee0367-ba7c-4392-ae12-e8ae28260e78",
-      "type": "boolean",
-      "value": true
-    },
-    {
-      "name": "Touchscreen",
-      "persistentUuid": "1343b6e2-cf0e-4e3a-80b2-3c910776cc25",
-      "type": "boolean",
-      "value": false
-    },
-    {
-      "name": "Fullscreen",
-      "persistentUuid": "5d51cad5-7813-4064-bdf5-4b4eed86da5e",
-      "type": "boolean",
-      "value": true
-    },
-    {
       "name": "DistanceFactor",
       "persistentUuid": "629e8e8c-c1e0-4388-b5ad-e4d0f409e422",
       "type": "number",
@@ -257,6 +197,107 @@
       "persistentUuid": "07c63185-3851-4a70-b28e-9c0532515969",
       "type": "number",
       "value": 0
+    },
+    {
+      "name": "SavedData",
+      "persistentUuid": "e0476657-7625-4723-9827-0e523b0d3b6a",
+      "type": "structure",
+      "children": [
+        {
+          "name": "Camera",
+          "persistentUuid": "c7b4e778-fd8a-43af-a756-64709200f122",
+          "type": "structure",
+          "children": [
+            {
+              "name": "CameraX",
+              "persistentUuid": "4fa69806-f838-4429-beec-5656b62cb267",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "CameraY",
+              "persistentUuid": "c60c117d-c5e4-4510-9db8-b9963414c6e6",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "CameraZoom",
+              "persistentUuid": "08825f3c-8fdb-424a-bc04-2bfada611f4e",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "name": "Settings",
+          "persistentUuid": "81973fd3-e343-41c4-8d3d-f643d4e1230f",
+          "type": "structure",
+          "children": [
+            {
+              "name": "BloomOn",
+              "persistentUuid": "5875cc71-93f6-48a6-b90f-efef906d9316",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Fullscreen",
+              "persistentUuid": "c04fbad1-de11-4f0e-b58b-35aa3083f29c",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "HasSavedBefore",
+              "persistentUuid": "0672e7e7-d899-46b0-8e7f-e9065b1496c3",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Touchscreen",
+              "persistentUuid": "b5a002c4-4bf2-4b77-b62f-85854e0135f4",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        },
+        {
+          "folded": true,
+          "name": "Ship",
+          "persistentUuid": "f86884ab-045e-47fe-a412-28b7445ffcb5",
+          "type": "structure",
+          "children": [
+            {
+              "name": "Angle",
+              "persistentUuid": "3844b757-bdbf-42f3-9ea3-b3e519a928d6",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "AtDestination",
+              "persistentUuid": "02a9f2b0-7d94-4d5a-980d-eda62c019eab",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "OrbitObjectName",
+              "persistentUuid": "2ec59cca-1db6-400a-965a-f7de84ba1862",
+              "type": "string",
+              "value": ""
+            },
+            {
+              "name": "X",
+              "persistentUuid": "1868519d-ec01-4c1b-a1f5-56f05064d813",
+              "type": "number",
+              "value": 0
+            },
+            {
+              "name": "Y",
+              "persistentUuid": "9e79a98a-84cf-4662-9740-b4549f0111a2",
+              "type": "number",
+              "value": 0
+            }
+          ]
+        }
+      ]
     }
   ],
   "instances": [
@@ -2223,6 +2264,38 @@
           "value": 250
         }
       ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 1080,
+      "layer": "Cursor",
+      "name": "ScrollingViewport",
+      "persistentUuid": "dec29844-a0e9-4db6-a4f9-96283b1c544b",
+      "width": 1440,
+      "x": 0,
+      "y": 0,
+      "zOrder": 40,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "LocalSavedData",
+      "persistentUuid": "3a0eafd6-d758-4e3b-b6b3-9a8e3e44f467",
+      "width": 0,
+      "x": 0,
+      "y": 0,
+      "zOrder": 41,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
     }
   ],
   "objects": [
@@ -2595,27 +2668,7 @@
       "updateIfNotVisible": false,
       "variables": [],
       "effects": [],
-      "behaviors": [
-        {
-          "name": "ScrollableViewport",
-          "type": "ScrollableViewport::ScrollableViewport",
-          "Direction": "Both",
-          "IsDragged": false,
-          "StartX": 0,
-          "StartY": 0,
-          "Layer": "",
-          "TargetedCameraX": 0,
-          "TargetedCameraY": 0,
-          "WheelScrollingDuration": 0.25,
-          "OldCameraX": 0,
-          "OldCameraY": 0,
-          "WheelStepSize": 120,
-          "State": "Idle",
-          "SpeedX": 0,
-          "SpeedY": 0,
-          "InertiaDeceleration": 800
-        }
-      ],
+      "behaviors": [],
       "animations": [
         {
           "name": "Black",
@@ -4220,6 +4273,12 @@
       "effects": [],
       "behaviors": [
         {
+          "name": "MultiplayerObject",
+          "type": "Multiplayer::MultiplayerObjectBehavior",
+          "playerNumber": 0,
+          "actionOnPlayerDisconnect": "DestroyObject"
+        },
+        {
           "name": "Tween",
           "type": "Tween::TweenBehavior"
         }
@@ -4907,6 +4966,200 @@
           ]
         }
       ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "ScrollingViewport",
+      "persistentUuid": "96d9f13d-1c97-4b60-adb1-ae132f168fa9",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [],
+      "behaviors": [
+        {
+          "name": "ScrollableViewport",
+          "type": "ScrollableViewport::ScrollableViewport",
+          "Direction": "Both",
+          "IsDragged": false,
+          "StartX": 0,
+          "StartY": 0,
+          "Layer": "Base layer",
+          "TargetedCameraX": 0,
+          "TargetedCameraY": 0,
+          "WheelScrollingDuration": 0,
+          "OldCameraX": 0,
+          "OldCameraY": 0,
+          "WheelStepSize": 0,
+          "State": "Idle",
+          "SpeedX": 0,
+          "SpeedY": 0,
+          "InertiaDeceleration": 900000
+        }
+      ],
+      "animations": [
+        {
+          "name": "Debug",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Debug",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "LocalSavedData",
+      "persistentUuid": "580e0897-76f7-496f-a314-f775a6ca4a70",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [
+        {
+          "name": "IsAltClicking",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "SelectedObjectUUID",
+          "type": "string",
+          "value": ""
+        },
+        {
+          "name": "CameraMovementSpeed",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "SelectedX",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "SelectedY",
+          "type": "number",
+          "value": 0
+        },
+        {
+          "name": "HasSelectedPosition",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "SettingsMenuOpen",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "BloomOn",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Touchscreen",
+          "type": "boolean",
+          "value": false
+        },
+        {
+          "name": "Fullscreen",
+          "type": "boolean",
+          "value": false
+        }
+      ],
+      "effects": [],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "default",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "Debug",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 0,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 0
+                      },
+                      {
+                        "x": 64,
+                        "y": 64
+                      },
+                      {
+                        "x": 0,
+                        "y": 64
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -5043,6 +5296,12 @@
             "objectName": "RealignShipButton"
           }
         ]
+      },
+      {
+        "objectName": "ScrollingViewport"
+      },
+      {
+        "objectName": "LocalSavedData"
       }
     ]
   },
@@ -5276,6 +5535,61 @@
             "=",
             "Time(\"timestamp\") / 1000"
           ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "ScrollingViewport"
+          ]
+        },
+        {
+          "type": {
+            "value": "Hide"
+          },
+          "parameters": [
+            "LocalSavedData"
+          ]
+        },
+        {
+          "type": {
+            "value": "PlayerAuthentication::HideAuthenticationBanner"
+          },
+          "parameters": [
+            ""
+          ]
+        }
+      ],
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Multiplayer::IsLobbyGameRunning"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "Multiplayer::IsPlayerHost"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Clipboard::WriteText"
+              },
+              "parameters": [
+                "",
+                "Multiplayer::CurrentLobbyID()",
+                ""
+              ]
+            }
+          ]
         }
       ]
     },
@@ -5407,34 +5721,6 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "Game Timer"
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [],
-      "actions": [
-        {
-          "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "GameTime",
-            "=",
-            "TimerElapsedTime(\"OrbitTick\") + WorldTime"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
       "comment": "Cursor Animation"
     },
     {
@@ -5527,569 +5813,6 @@
         "textG": 0,
         "textR": 0
       },
-      "comment": "Autosave"
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "SceneJustBegins"
-          },
-          "parameters": [
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SaveState::RestoreGameSaveStateFromStorage"
-          },
-          "parameters": [
-            "",
-            "\"StarmapSave\"",
-            "",
-            "no"
-          ]
-        },
-        {
-          "type": {
-            "value": "Wait"
-          },
-          "parameters": [
-            "0.5"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Paused",
-            "False",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "SettingsMenuOpen",
-            "=",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Spaceship",
-            "Travelling",
-            "=",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "RepeatEveryXSeconds::Repeat"
-          },
-          "parameters": [
-            "",
-            "\"Autosave\"",
-            "20",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Signals::CallSignal"
-          },
-          "parameters": [
-            "",
-            "\"Save\"",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"LControl\""
-          ]
-        },
-        {
-          "type": {
-            "value": "KeyFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"x\""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "SettingsMenuOpen",
-            "=",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Spaceship",
-            "Travelling",
-            "=",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "Signals::CallSignal"
-          },
-          "parameters": [
-            "",
-            "\"Save\"",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "Signals::OnSignalCall"
-          },
-          "parameters": [
-            "",
-            "\"Save\"",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "SettingsMenuOpen",
-            "=",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BooleanObjectVariable"
-          },
-          "parameters": [
-            "Spaceship",
-            "Travelling",
-            "=",
-            ""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SaveState::SetVariableSaveConfiguration"
-          },
-          "parameters": [
-            "",
-            "BloomOn",
-            "yes",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SaveState::SetVariableSaveConfiguration"
-          },
-          "parameters": [
-            "",
-            "Fullscreen",
-            "yes",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SaveState::SetVariableSaveConfiguration"
-          },
-          "parameters": [
-            "",
-            "Touchscreen",
-            "yes",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SaveState::SetVariableSaveConfiguration"
-          },
-          "parameters": [
-            "",
-            "HasArrived",
-            "yes",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SaveState::SetVariableSaveConfiguration"
-          },
-          "parameters": [
-            "",
-            "ShipOrbitingUUID",
-            "yes",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SaveState::SetVariableSaveConfiguration"
-          },
-          "parameters": [
-            "",
-            "Paused",
-            "no",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SaveState::SetVariableSaveConfiguration"
-          },
-          "parameters": [
-            "",
-            "HasSelectedPosition",
-            "no",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SaveState::SetVariableSaveConfiguration"
-          },
-          "parameters": [
-            "",
-            "SelectedObjectUUID",
-            "no",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SaveState::SetVariableSaveConfiguration"
-          },
-          "parameters": [
-            "",
-            "SelectedX",
-            "no",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SaveState::SetVariableSaveConfiguration"
-          },
-          "parameters": [
-            "",
-            "SelectedY",
-            "no",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SaveState::SetVariableSaveConfiguration"
-          },
-          "parameters": [
-            "",
-            "DistanceFactor",
-            "no",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SaveState::SetVariableSaveConfiguration"
-          },
-          "parameters": [
-            "",
-            "WorldTime",
-            "no",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SaveState::SetVariableSaveConfiguration"
-          },
-          "parameters": [
-            "",
-            "GameTime",
-            "no",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "SaveState::CreateGameSaveStateInStorage"
-          },
-          "parameters": [
-            "",
-            "\"StarmapSave\"",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "KeyFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"LAlt\""
-          ]
-        },
-        {
-          "type": {
-            "value": "KeyFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"g\""
-          ]
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SaveState::DeleteSaveFromStorage"
-          },
-          "parameters": [
-            "",
-            "\"StarmapSave\""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
-      "comment": "Pause Orbit"
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "MouseButtonFromTextPressed"
-          },
-          "parameters": [
-            "",
-            "\"Left\""
-          ]
-        },
-        {
-          "type": {
-            "value": "CollisionNP"
-          },
-          "parameters": [
-            "Cursor",
-            "PauseButton",
-            "",
-            "",
-            "yes"
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "Paused",
-            "Toggle",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "PlaySound"
-          },
-          "parameters": [
-            "",
-            "typing_beep.ogg",
-            "",
-            "25",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "Paused",
-            "True",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "PauseTimer"
-          },
-          "parameters": [
-            "",
-            "\"OrbitTick\""
-          ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-          },
-          "parameters": [
-            "PauseButton",
-            "Animation",
-            "=",
-            "\"Play\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Tween::StopSceneTween"
-          },
-          "parameters": [
-            "",
-            "\"UpdateGlobalTime\"",
-            ""
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Standard",
-      "conditions": [
-        {
-          "type": {
-            "value": "BooleanVariable"
-          },
-          "parameters": [
-            "Paused",
-            "False",
-            ""
-          ]
-        },
-        {
-          "type": {
-            "value": "BuiltinCommonInstructions::Once"
-          },
-          "parameters": []
-        }
-      ],
-      "actions": [
-        {
-          "type": {
-            "value": "UnPauseTimer"
-          },
-          "parameters": [
-            "",
-            "\"OrbitTick\""
-          ]
-        },
-        {
-          "type": {
-            "value": "AnimatableCapability::AnimatableBehavior::SetName"
-          },
-          "parameters": [
-            "PauseButton",
-            "Animation",
-            "=",
-            "\"Pause\""
-          ]
-        },
-        {
-          "type": {
-            "value": "Tween::TweenSceneVariableNumber3"
-          },
-          "parameters": [
-            "",
-            "\"UpdateGlobalTime\"",
-            "WorldTime",
-            "Time(\"timestamp\") / 1000",
-            "\"easeInOutSine\"",
-            "2"
-          ]
-        }
-      ]
-    },
-    {
-      "type": "BuiltinCommonInstructions::Comment",
-      "color": {
-        "b": 109,
-        "g": 230,
-        "r": 255,
-        "textB": 0,
-        "textG": 0,
-        "textR": 0
-      },
       "comment": "Exit"
     },
     {
@@ -6126,6 +5849,24 @@
       "actions": [
         {
           "type": {
+            "value": "Signals::CallSignal"
+          },
+          "parameters": [
+            "",
+            "\"Save\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.2"
+          ]
+        },
+        {
+          "type": {
             "value": "Quit"
           },
           "parameters": [
@@ -6159,6 +5900,24 @@
       "actions": [
         {
           "type": {
+            "value": "Signals::CallSignal"
+          },
+          "parameters": [
+            "",
+            "\"Save\"",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "Wait"
+          },
+          "parameters": [
+            "0.2"
+          ]
+        },
+        {
+          "type": {
             "value": "Quit"
           },
           "parameters": [
@@ -6166,6 +5925,1095 @@
           ]
         }
       ]
+    },
+    {
+      "colorB": 228,
+      "colorG": 176,
+      "colorR": 74,
+      "creationTime": 0,
+      "folded": true,
+      "name": "Save & Load",
+      "source": "",
+      "type": "BuiltinCommonInstructions::Group",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Load Data"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "SceneJustBegins"
+              },
+              "parameters": [
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"Settings\"",
+                "\"HasSavedBefore\"",
+                "",
+                "SavedData.Settings.HasSavedBefore"
+              ]
+            },
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"ShipX\"",
+                "",
+                "SavedData.Ship.X"
+              ]
+            },
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"ShipY\"",
+                "",
+                "SavedData.Ship.Y"
+              ]
+            },
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"ShipAngle\"",
+                "",
+                "SavedData.Ship.Angle"
+              ]
+            },
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"ShipAtDestination\"",
+                "",
+                "SavedData.Ship.AtDestination"
+              ]
+            },
+            {
+              "type": {
+                "value": "ReadStringFromStorage"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"OrbitObjectName\"",
+                "",
+                "SavedData.Ship.OrbitObjectName"
+              ]
+            },
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"Settings\"",
+                "\"BloomOn\"",
+                "",
+                "SavedData.Settings.BloomOn"
+              ]
+            },
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"Settings\"",
+                "\"Touchscreen\"",
+                "",
+                "SavedData.Settings.Touchscreen"
+              ]
+            },
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"Settings\"",
+                "\"Fullscreen\"",
+                "",
+                "SavedData.Settings.Fullscreen"
+              ]
+            },
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"Camera\"",
+                "\"CameraX\"",
+                "",
+                "SavedData.Camera.CameraX"
+              ]
+            },
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"Camera\"",
+                "\"CameraY\"",
+                "",
+                "SavedData.Camera.CameraY"
+              ]
+            },
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"Camera\"",
+                "\"CameraZoom\"",
+                "",
+                "SavedData.Camera.CameraZoom"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "Selectables",
+                    "Name",
+                    "=",
+                    "SavedData.Ship.OrbitObjectName"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.HasSavedBefore",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "ShipOrbitingUUID",
+                    "=",
+                    "Selectables.UUID"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Ship.AtDestination",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.HasSavedBefore",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "HasArrived",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Ship.AtDestination",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.HasSavedBefore",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "HasArrived",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.BloomOn",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.HasSavedBefore",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "LocalSavedData",
+                    "BloomOn",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.BloomOn",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.HasSavedBefore",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "LocalSavedData",
+                    "BloomOn",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.Touchscreen",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.HasSavedBefore",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "LocalSavedData",
+                    "Touchscreen",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.Touchscreen",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.HasSavedBefore",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "LocalSavedData",
+                    "Touchscreen",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.Fullscreen",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.HasSavedBefore",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "LocalSavedData",
+                    "Fullscreen",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.Fullscreen",
+                    "=",
+                    "0"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.HasSavedBefore",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetBooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "LocalSavedData",
+                    "Fullscreen",
+                    "False",
+                    ""
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Settings.HasSavedBefore",
+                    "=",
+                    "1"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "SetXY"
+                  },
+                  "parameters": [
+                    "Spaceship",
+                    "=",
+                    "SavedData.Ship.X",
+                    "=",
+                    "SavedData.Ship.Y"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetAngle"
+                  },
+                  "parameters": [
+                    "Spaceship",
+                    "=",
+                    "SavedData.Ship.Angle"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterX"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "SavedData.Camera.CameraX",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetCameraCenterY"
+                  },
+                  "parameters": [
+                    "",
+                    "=",
+                    "SavedData.Camera.CameraY",
+                    "",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "ZoomCamera"
+                  },
+                  "parameters": [
+                    "",
+                    "SavedData.Camera.CameraZoom",
+                    "",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Save Data"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Spaceship",
+                "Travelling",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "RepeatEveryXSeconds::Repeat"
+              },
+              "parameters": [
+                "",
+                "\"Autosave\"",
+                "20",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Signals::CallSignal"
+              },
+              "parameters": [
+                "",
+                "\"Save\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"LControl\""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"x\""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Spaceship",
+                "Travelling",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "Signals::CallSignal"
+              },
+              "parameters": [
+                "",
+                "\"Save\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Signals::OnSignalCall"
+              },
+              "parameters": [
+                "",
+                "\"Save\"",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Spaceship",
+                "Travelling",
+                "=",
+                ""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"ShipX\"",
+                "Spaceship.X()"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"ShipY\"",
+                "Spaceship.Y()"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"ShipAngle\"",
+                "Spaceship.Angle()"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Camera\"",
+                "\"CameraX\"",
+                "CameraCenterX()"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Camera\"",
+                "\"CameraY\"",
+                "CameraCenterY()"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Camera\"",
+                "\"CameraZoom\"",
+                "CameraZoom()"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Settings\"",
+                "\"HasSavedBefore\"",
+                "1"
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "StringObjectVariable"
+                  },
+                  "parameters": [
+                    "Selectables",
+                    "UUID",
+                    "=",
+                    "ShipOrbitingUUID"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "HasArrived",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierTxt"
+                  },
+                  "parameters": [
+                    "\"Save\"",
+                    "\"OrbitObjectName\"",
+                    "Selectables.Name"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "EcrireFichierExp"
+                  },
+                  "parameters": [
+                    "\"Save\"",
+                    "\"ShipAtDestination\"",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "HasArrived",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierExp"
+                  },
+                  "parameters": [
+                    "\"Save\"",
+                    "\"ShipAtDestination\"",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "LocalSavedData",
+                    "BloomOn",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierExp"
+                  },
+                  "parameters": [
+                    "\"Settings\"",
+                    "\"BloomOn\"",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "LocalSavedData",
+                    "BloomOn",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierExp"
+                  },
+                  "parameters": [
+                    "\"Settings\"",
+                    "\"BloomOn\"",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "LocalSavedData",
+                    "Touchscreen",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierExp"
+                  },
+                  "parameters": [
+                    "\"Settings\"",
+                    "\"Touchscreen\"",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "LocalSavedData",
+                    "Touchscreen",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierExp"
+                  },
+                  "parameters": [
+                    "\"Settings\"",
+                    "\"Touchscreen\"",
+                    "0"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "LocalSavedData",
+                    "Fullscreen",
+                    "True",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierExp"
+                  },
+                  "parameters": [
+                    "\"Settings\"",
+                    "\"Fullscreen\"",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanObjectVariable"
+                  },
+                  "parameters": [
+                    "LocalSavedData",
+                    "Fullscreen",
+                    "False",
+                    ""
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "EcrireFichierExp"
+                  },
+                  "parameters": [
+                    "\"Settings\"",
+                    "\"Fullscreen\"",
+                    "0"
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Delete Data"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"LAlt\""
+              ]
+            },
+            {
+              "type": {
+                "value": "KeyFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"g\""
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "DeleteFichier"
+              },
+              "parameters": [
+                "\"Save\""
+              ]
+            },
+            {
+              "type": {
+                "value": "DeleteFichier"
+              },
+              "parameters": [
+                "\"Camera\""
+              ]
+            },
+            {
+              "type": {
+                "value": "DeleteFichier"
+              },
+              "parameters": [
+                "\"Settings\""
+              ]
+            }
+          ]
+        }
+      ],
+      "parameters": []
     },
     {
       "colorB": 228,
@@ -6273,6 +7121,35 @@
           "conditions": [
             {
               "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Cursor",
+                "IgnorePanning",
+                "",
+                "",
+                "yes"
+              ]
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "ActivateBehavior"
+              },
+              "parameters": [
+                "ScrollingViewport",
+                "ScrollableViewport",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
                 "inverted": true,
                 "value": "CollisionNP"
               },
@@ -6288,15 +7165,12 @@
           "actions": [
             {
               "type": {
-                "value": "DragCameraWithPointer::DragCameraWithPointer"
+                "value": "ActivateBehavior"
               },
               "parameters": [
-                "",
-                "0",
-                "",
-                "\"both\"",
-                "Left",
-                ""
+                "ScrollingViewport",
+                "ScrollableViewport",
+                "yes"
               ]
             }
           ]
@@ -6340,9 +7214,10 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetNumberVariable"
+                    "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
+                    "LocalSavedData",
                     "CameraMovementSpeed",
                     "=",
                     "1"
@@ -6366,9 +7241,10 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetNumberVariable"
+                    "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
+                    "LocalSavedData",
                     "CameraMovementSpeed",
                     "=",
                     "10"
@@ -6403,9 +7279,10 @@
               "actions": [
                 {
                   "type": {
-                    "value": "SetNumberVariable"
+                    "value": "SetNumberObjectVariable"
                   },
                   "parameters": [
+                    "LocalSavedData",
                     "CameraMovementSpeed",
                     "=",
                     "4"
@@ -6453,7 +7330,7 @@
               "parameters": [
                 "",
                 "-",
-                "CameraMovementSpeed",
+                "LocalSavedData.CameraMovementSpeed",
                 "",
                 ""
               ]
@@ -6498,7 +7375,7 @@
               "parameters": [
                 "",
                 "+",
-                "CameraMovementSpeed",
+                "LocalSavedData.CameraMovementSpeed",
                 "",
                 ""
               ]
@@ -6543,7 +7420,7 @@
               "parameters": [
                 "",
                 "+",
-                "CameraMovementSpeed",
+                "LocalSavedData.CameraMovementSpeed",
                 "",
                 ""
               ]
@@ -6588,7 +7465,7 @@
               "parameters": [
                 "",
                 "-",
-                "CameraMovementSpeed",
+                "LocalSavedData.CameraMovementSpeed",
                 "",
                 ""
               ]
@@ -6870,11 +7747,13 @@
                 },
                 {
                   "type": {
-                    "value": "MouseButtonFromTextPressed"
+                    "value": "BooleanObjectVariable"
                   },
                   "parameters": [
-                    "",
-                    "\"Right\""
+                    "LocalSavedData",
+                    "IsAltClicking",
+                    "True",
+                    ""
                   ]
                 }
               ]
@@ -6960,9 +7839,10 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "SettingsMenuOpen",
                 "Toggle",
                 ""
@@ -6987,11 +7867,12 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "SettingsMenuOpen",
-                "=",
+                "False",
                 ""
               ]
             },
@@ -7019,9 +7900,10 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "SettingsMenuOpen",
                 "True",
                 ""
@@ -7095,9 +7977,10 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "BloomOn",
                 "Toggle",
                 ""
@@ -7122,9 +8005,10 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "BloomOn",
                 "True",
                 ""
@@ -7205,11 +8089,12 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "BloomOn",
-                "=",
+                "False",
                 ""
               ]
             }
@@ -7317,9 +8202,10 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "Touchscreen",
                 "Toggle",
                 ""
@@ -7344,9 +8230,10 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "Touchscreen",
                 "True",
                 ""
@@ -7372,11 +8259,12 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "Touchscreen",
-                "=",
+                "False",
                 ""
               ]
             }
@@ -7429,9 +8317,10 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "Fullscreen",
                 "Toggle",
                 ""
@@ -7473,9 +8362,10 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "Fullscreen",
                 "Toggle",
                 ""
@@ -7488,9 +8378,10 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "Fullscreen",
                 "True",
                 ""
@@ -7526,11 +8417,12 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "Fullscreen",
-                "=",
+                "False",
                 ""
               ]
             }
@@ -7587,9 +8479,10 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "IsAltClicking",
                 "True",
                 ""
@@ -7612,9 +8505,10 @@
             },
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "Touchscreen",
                 "True",
                 ""
@@ -7624,9 +8518,10 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "IsAltClicking",
                 "True",
                 ""
@@ -7662,9 +8557,10 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "IsAltClicking",
                 "False",
                 ""
@@ -7680,6 +8576,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Selection",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -7701,9 +8598,10 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "IsAltClicking",
                 "True",
                 ""
@@ -7815,9 +8713,10 @@
           "actions": [
             {
               "type": {
-                "value": "SetStringVariable"
+                "value": "SetStringObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "SelectedObjectUUID",
                 "=",
                 "Selectables.UUID"
@@ -7857,7 +8756,7 @@
                 "Selectables",
                 "UUID",
                 "=",
-                "SelectedObjectUUID"
+                "LocalSavedData.SelectedObjectUUID"
               ]
             }
           ],
@@ -7906,7 +8805,7 @@
                 "Selectables",
                 "UUID",
                 "=",
-                "SelectedObjectUUID"
+                "LocalSavedData.SelectedObjectUUID"
               ]
             },
             {
@@ -7954,7 +8853,7 @@
                 "Selectables",
                 "UUID",
                 "=",
-                "SelectedObjectUUID"
+                "LocalSavedData.SelectedObjectUUID"
               ]
             },
             {
@@ -8027,9 +8926,10 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "IsAltClicking",
                 "True",
                 ""
@@ -8078,9 +8978,10 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "HasSelectedPosition",
                 "True",
                 ""
@@ -8088,9 +8989,10 @@
             },
             {
               "type": {
-                "value": "SetNumberVariable"
+                "value": "SetNumberObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "SelectedX",
                 "=",
                 "CursorX()"
@@ -8098,9 +9000,10 @@
             },
             {
               "type": {
-                "value": "SetNumberVariable"
+                "value": "SetNumberObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "SelectedY",
                 "=",
                 "CursorY()"
@@ -8125,9 +9028,9 @@
               "parameters": [
                 "PositionalSelectionBox",
                 "=",
-                "SelectedX",
+                "LocalSavedData.SelectedX",
                 "=",
-                "SelectedY"
+                "LocalSavedData.SelectedY"
               ]
             },
             {
@@ -8155,9 +9058,10 @@
             },
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "HasSelectedPosition",
                 "True",
                 ""
@@ -8197,9 +9101,10 @@
           "actions": [
             {
               "type": {
-                "value": "SetBooleanVariable"
+                "value": "SetBooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "HasSelectedPosition",
                 "False",
                 ""
@@ -8223,7 +9128,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Ship Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8259,9 +9163,10 @@
                 },
                 {
                   "type": {
-                    "value": "BooleanVariable"
+                    "value": "BooleanObjectVariable"
                   },
                   "parameters": [
+                    "LocalSavedData",
                     "HasSelectedPosition",
                     "False",
                     ""
@@ -8350,9 +9255,10 @@
                 },
                 {
                   "type": {
-                    "value": "BooleanVariable"
+                    "value": "BooleanObjectVariable"
                   },
                   "parameters": [
+                    "LocalSavedData",
                     "HasSelectedPosition",
                     "True",
                     ""
@@ -8475,9 +9381,10 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "HasSelectedPosition",
                 "True",
                 ""
@@ -8510,9 +9417,10 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "HasSelectedPosition",
                 "False",
                 ""
@@ -8584,6 +9492,17 @@
             },
             {
               "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Spaceship",
+                "Travelling",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -8600,6 +9519,33 @@
                 "",
                 "25",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
+              },
+              "parameters": [
+                "Spaceship",
+                "MultiplayerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "HasArrived"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "ShipOrbitingUUID"
               ]
             },
             {
@@ -8630,8 +9576,8 @@
                 "Spaceship",
                 "Tween",
                 "\"RealignShip\"",
-                "SelectedX",
-                "SelectedY",
+                "LocalSavedData.SelectedX",
+                "LocalSavedData.SelectedY",
                 "\"easeInOutQuad\"",
                 "0.5",
                 ""
@@ -8685,9 +9631,21 @@
             },
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "Spaceship",
+                "Travelling",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "LocalSavedData",
                 "HasSelectedPosition",
                 "True",
                 ""
@@ -8711,6 +9669,42 @@
                 "",
                 "25",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
+              },
+              "parameters": [
+                "Spaceship",
+                "MultiplayerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "HasArrived"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "ShipOrbitingUUID"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "ShowFinishTravelButton"
               ]
             },
             {
@@ -8762,7 +9756,7 @@
                 "Spaceship",
                 "Tween",
                 "\"FaceTowardsDestination\"",
-                "AngleBetweenPositions(Spaceship.X(), Spaceship.Y(), SelectedX, SelectedY)",
+                "AngleBetweenPositions(Spaceship.X(), Spaceship.Y(), LocalSavedData.SelectedX, LocalSavedData.SelectedY)",
                 "\"easeInOutQuad\"",
                 "1",
                 ""
@@ -8776,8 +9770,8 @@
                 "Spaceship",
                 "Tween",
                 "\"TravelShip\"",
-                "SelectedX",
-                "SelectedY",
+                "LocalSavedData.SelectedX",
+                "LocalSavedData.SelectedY",
                 "\"easeInOutQuad\"",
                 "10",
                 ""
@@ -8869,7 +9863,7 @@
                   "parameters": [
                     "ShipOrbitingUUID",
                     "=",
-                    "SelectedObjectUUID"
+                    "LocalSavedData.SelectedObjectUUID"
                   ]
                 }
               ]
@@ -8977,13 +9971,24 @@
             },
             {
               "type": {
+                "value": "BooleanObjectVariable"
+              },
+              "parameters": [
+                "Spaceship",
+                "Travelling",
+                "=",
+                ""
+              ]
+            },
+            {
+              "type": {
                 "value": "StringObjectVariable"
               },
               "parameters": [
                 "Selectables",
                 "UUID",
                 "=",
-                "SelectedObjectUUID"
+                "LocalSavedData.SelectedObjectUUID"
               ]
             },
             {
@@ -9004,6 +10009,51 @@
                 "",
                 "25",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
+              },
+              "parameters": [
+                "Spaceship",
+                "MultiplayerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "HasArrived"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "ShipOrbitingUUID"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "ShowFinishTravelButton"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "Paused"
               ]
             },
             {
@@ -9211,6 +10261,12 @@
             },
             {
               "type": {
+                "value": "Multiplayer::IsPlayerHost"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -9227,6 +10283,24 @@
                 "",
                 "25",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
+              },
+              "parameters": [
+                "Spaceship",
+                "MultiplayerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "ShowFinishTravelButton"
               ]
             },
             {
@@ -9353,11 +10427,75 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Planet Simulation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
       "events": [
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Game Timer"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "Multiplayer::IsLobbyGameRunning"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "Multiplayer::IsPlayerHost"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "GameTime",
+                "=",
+                "TimerElapsedTime(\"OrbitTick\") + WorldTime"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "inverted": true,
+                "value": "Multiplayer::IsLobbyGameRunning"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "GameTime",
+                "=",
+                "TimerElapsedTime(\"OrbitTick\") + WorldTime"
+              ]
+            }
+          ]
+        },
         {
           "type": "BuiltinCommonInstructions::Comment",
           "color": {
@@ -9459,6 +10597,183 @@
               ]
             }
           ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Comment",
+          "color": {
+            "b": 109,
+            "g": 230,
+            "r": 255,
+            "textB": 0,
+            "textG": 0,
+            "textR": 0
+          },
+          "comment": "Pause Orbit"
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Cursor",
+                "PauseButton",
+                "",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "Paused",
+                "Toggle",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "typing_beep.ogg",
+                "",
+                "25",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Paused",
+                "True",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"OrbitTick\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "PauseButton",
+                "Animation",
+                "=",
+                "\"Play\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::StopSceneTween"
+              },
+              "parameters": [
+                "",
+                "\"UpdateGlobalTime\"",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "BooleanVariable"
+              },
+              "parameters": [
+                "Paused",
+                "False",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "UnPauseTimer"
+              },
+              "parameters": [
+                "",
+                "\"OrbitTick\""
+              ]
+            },
+            {
+              "type": {
+                "value": "AnimatableCapability::AnimatableBehavior::SetName"
+              },
+              "parameters": [
+                "PauseButton",
+                "Animation",
+                "=",
+                "\"Pause\""
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::TweenSceneVariableNumber3"
+              },
+              "parameters": [
+                "",
+                "\"UpdateGlobalTime\"",
+                "WorldTime",
+                "Time(\"timestamp\") / 1000",
+                "\"easeInOutSine\"",
+                "2"
+              ]
+            }
+          ]
         }
       ],
       "parameters": []
@@ -9487,9 +10802,10 @@
             },
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "HasSelectedPosition",
                 "False",
                 ""
@@ -9529,7 +10845,7 @@
                 "Selectables",
                 "UUID",
                 "=",
-                "SelectedObjectUUID"
+                "LocalSavedData.SelectedObjectUUID"
               ]
             }
           ],
@@ -9563,9 +10879,10 @@
           "conditions": [
             {
               "type": {
-                "value": "BooleanVariable"
+                "value": "BooleanObjectVariable"
               },
               "parameters": [
+                "LocalSavedData",
                 "HasSelectedPosition",
                 "True",
                 ""
@@ -9581,7 +10898,7 @@
                 "CoordsText",
                 "Text",
                 "=",
-                "\"Cursor: \" + ToString(round(CursorX())) + \",\" + ToString(round(CursorY())) + NewLine() + \"Ship: \" + ToString(round(Spaceship.CenterX())) + \",\" + ToString(round(Spaceship.CenterY())) + NewLine() + \"Selected: \" + ToString(round(SelectedX)) + \",\" + ToString(round(SelectedY))"
+                "\"Cursor: \" + ToString(round(CursorX())) + \",\" + ToString(round(CursorY())) + NewLine() + \"Ship: \" + ToString(round(Spaceship.CenterX())) + \",\" + ToString(round(Spaceship.CenterY())) + NewLine() + \"Selected: \" + ToString(round(LocalSavedData.SelectedX)) + \",\" + ToString(round(LocalSavedData.SelectedY))"
               ]
             },
             {
@@ -9592,7 +10909,7 @@
                 "DistanceText",
                 "Text",
                 "=",
-                "\"ETA: \" + ToString(round(DistanceBetweenPositions(Spaceship.X(), Spaceship.Y(), SelectedX, SelectedY) / DistanceFactor)) + \" Hours [\" + ToString(round((DistanceBetweenPositions(Spaceship.X(), Spaceship.Y(), SelectedX, SelectedY) / DistanceFactor) / 24)) + \" Day(s)]\""
+                "\"ETA: \" + ToString(round(DistanceBetweenPositions(Spaceship.X(), Spaceship.Y(), LocalSavedData.SelectedX, LocalSavedData.SelectedY) / DistanceFactor)) + \" Hours [\" + ToString(round((DistanceBetweenPositions(Spaceship.X(), Spaceship.Y(), LocalSavedData.SelectedX, LocalSavedData.SelectedY) / DistanceFactor) / 24)) + \" Day(s)]\""
               ]
             }
           ]
@@ -9769,6 +11086,10 @@
     {
       "name": "InOnScreen",
       "type": "IsOnScreen::InOnScreen"
+    },
+    {
+      "name": "MultiplayerObject",
+      "type": "Multiplayer::MultiplayerObjectBehavior"
     },
     {
       "name": "Opacity",

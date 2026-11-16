@@ -1,5 +1,6 @@
 {
-  "firstLayout": "",
+  "firstLayout": "Starmap",
+  "previewLayout": "Lobby Select",
   "gdVersion": {
     "build": 287,
     "major": 5,
@@ -516,6 +517,14 @@
         "name": "big_arrow.png",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "assets/Debug2.png",
+        "kind": "image",
+        "metadata": "{\"extension\":\".png\"}",
+        "name": "Debug",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
@@ -529,6 +538,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/layouts/starmap"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/layouts/lobby-select"
     }
   ],
   "layoutsFolderStructure": {
@@ -536,6 +549,9 @@
     "children": [
       {
         "itemName": "Starmap"
+      },
+      {
+        "itemName": "Lobby Select"
       }
     ]
   },
@@ -574,6 +590,30 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/signals"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/scrollableviewport"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/panelspritebutton"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/scrollbar"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/multiplayercustomlobbies"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/multiplayerhelper"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/clipboard"
     }
   ],
   "externalLayouts": [

@@ -1,0 +1,554 @@
+{
+  "author": "",
+  "category": "",
+  "dimension": "",
+  "extensionNamespace": "",
+  "fullName": "",
+  "gdevelopVersion": "",
+  "helpPath": "",
+  "iconUrl": "data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjwhLS0gR2VuZXJhdG9yOiBBZG9iZSBJbGx1c3RyYXRvciAyMy4wLjMsIFNWRyBFeHBvcnQgUGx1Zy1JbiAuIFNWRyBWZXJzaW9uOiA2LjAwIEJ1aWxkIDApICAtLT4NCjxzdmcgdmVyc2lvbj0iMS4xIiBpZD0iSWNvbnMiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgeG1sbnM6eGxpbms9Imh0dHA6Ly93d3cudzMub3JnLzE5OTkveGxpbmsiIHg9IjBweCIgeT0iMHB4Ig0KCSB2aWV3Qm94PSIwIDAgMzIgMzIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDMyIDMyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQo8c3R5bGUgdHlwZT0idGV4dC9jc3MiPg0KCS5zdDB7ZmlsbDpub25lO3N0cm9rZTojMDAwMDAwO3N0cm9rZS13aWR0aDoyO3N0cm9rZS1saW5lY2FwOnJvdW5kO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoxMDt9DQo8L3N0eWxlPg0KPHBhdGggY2xhc3M9InN0MCIgZD0iTTIyLDIxYy0xLjEsMC0yLjEsMC40LTMsMUgxM2MtMC44LTAuNi0xLjktMS0zLTFjLTIuOCwwLTUsMi4yLTUsNXMyLjIsNSw1LDVjMS4xLDAsMi4xLTAuNCwzLTFIMTkNCgljMC44LDAuNiwxLjksMSwzLDFjMi44LDAsNS0yLjIsNS01UzI0LjgsMjEsMjIsMjF6Ii8+DQo8bGluZSBjbGFzcz0ic3QwIiB4MT0iMTAiIHkxPSIyNCIgeDI9IjEwIiB5Mj0iMjgiLz4NCjxsaW5lIGNsYXNzPSJzdDAiIHgxPSI4IiB5MT0iMjYiIHgyPSIxMiIgeTI9IjI2Ii8+DQo8bGluZSBjbGFzcz0ic3QwIiB4MT0iMjMiIHkxPSIyNSIgeDI9IjIzIiB5Mj0iMjUiLz4NCjxsaW5lIGNsYXNzPSJzdDAiIHgxPSIyMSIgeTE9IjI3IiB4Mj0iMjEiIHkyPSIyNyIvPg0KPGNpcmNsZSBjbGFzcz0ic3QwIiBjeD0iMTYiIGN5PSI5IiByPSI4Ii8+DQo8ZWxsaXBzZSBjbGFzcz0ic3QwIiBjeD0iMTYiIGN5PSI5IiByeD0iMy43IiByeT0iOCIvPg0KPGxpbmUgY2xhc3M9InN0MCIgeDE9IjgiIHkxPSI5IiB4Mj0iMjQiIHkyPSI5Ii8+DQo8bGluZSBjbGFzcz0ic3QwIiB4MT0iMTYiIHkxPSIyMiIgeDI9IjE2IiB5Mj0iMTciLz4NCjwvc3ZnPg0K",
+  "name": "MultiplayerHelper",
+  "previewIconUrl": "https://asset-resources.gdevelop.io/public-resources/Icons/Line Hero Pack/Master/SVG/Videogames/966c560ab1077f2b9f28d6a824adca006d0905f8c062bb57d3a1576e18819990_Videogames_multiplayer_online_games_joystick.svg",
+  "shortDescription": "",
+  "version": "",
+  "description": "",
+  "tags": [],
+  "authorIds": [],
+  "dependencies": [],
+  "globalVariables": [],
+  "sceneVariables": [
+    {
+      "name": "json",
+      "type": "string",
+      "value": "0"
+    }
+  ],
+  "eventsFunctions": [
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "name": "Plug",
+      "private": true,
+      "sentence": "",
+      "events": [],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "fullName": "",
+      "functionType": "Action",
+      "name": "onFirstSceneLoaded",
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "value": "MultiplayerHelper::Plug"
+              },
+              "parameters": [
+                "",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::DisableVariableSynchronization"
+              },
+              "parameters": [
+                "",
+                "json"
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "let hiddenTimeout = null;",
+            "",
+            "document.addEventListener(\"visibilitychange\", () => {",
+            "  if (document.hidden) {",
+            "",
+            "    hiddenTimeout = setTimeout(() => {",
+            "        gdjs.multiplayer.leaveGameLobby();",
+            "    }, 60000);",
+            "",
+            "  } else {",
+            "",
+            "    clearTimeout(hiddenTimeout);",
+            "    hiddenTimeout = null;",
+            "",
+            "  }",
+            "});",
+            ""
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Check if multiplayer is ready.",
+      "fullName": "Multiplayer is ready",
+      "functionType": "Condition",
+      "name": "Ready",
+      "sentence": "Multiplayer is ready",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "eventsFunctionContext.returnValue = gdjs.multiplayerPeerJsHelper.isReady()",
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Connect to default broker server.",
+      "fullName": "Connect to default broker server",
+      "functionType": "Action",
+      "name": "ConnectToBrokerServer",
+      "sentence": "Connect to default broker server",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "gdjs.multiplayerPeerJsHelper.useDefaultBrokerServer();",
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Join an empty lobby.",
+      "fullName": "Join an empty lobby",
+      "functionType": "Action",
+      "name": "JoinEmptyLobby",
+      "sentence": "Join an empty lobby",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "await": true,
+                "value": "SendAsyncRequest"
+              },
+              "parameters": [
+                "\"https://api.gdevelop.io/play/game/\"+MultiplayerHelper::ProjectUUID()+\"/public-lobby?isPreview=\"+MultiplayerHelper::IsPreview()+\"&gameVersion=\"+MultiplayerHelper::GameVersion()",
+                "\"\"",
+                "\"GET\"",
+                "\"\"",
+                "json",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "json",
+                "data"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "json",
+                "=",
+                "\"0\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEachChildVariable",
+              "iterableVariableName": "data",
+              "valueIteratorVariableName": "value",
+              "keyIteratorVariableName": "",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "check",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "VariableChildCount(value.players)",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Multiplayer::QuickJoinWithLobbyID"
+                  },
+                  "parameters": [
+                    "",
+                    "value.id",
+                    "",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "check",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "variables": [
+            {
+              "name": "value",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "name",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "players",
+                  "type": "array",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "data",
+              "type": "structure",
+              "children": []
+            },
+            {
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Join a private empty lobby.",
+      "fullName": "Join a private empty lobby",
+      "functionType": "Action",
+      "name": "JoinPrivateEmptyLobby",
+      "sentence": "Join a private empty lobby",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [],
+          "actions": [
+            {
+              "type": {
+                "await": true,
+                "value": "SendAsyncRequest"
+              },
+              "parameters": [
+                "\"https://api.gdevelop.io/play/game/\"+MultiplayerHelper::ProjectUUID()+\"/public-lobby?isPreview=\"+\"true\"+\"&gameVersion=\"+MultiplayerHelper::GameVersion()",
+                "\"\"",
+                "\"GET\"",
+                "\"\"",
+                "json",
+                ""
+              ]
+            },
+            {
+              "type": {
+                "value": "JSONToVariableStructure2"
+              },
+              "parameters": [
+                "json",
+                "data"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetStringVariable"
+              },
+              "parameters": [
+                "json",
+                "=",
+                "\"0\""
+              ]
+            }
+          ],
+          "events": [
+            {
+              "type": "BuiltinCommonInstructions::ForEachChildVariable",
+              "iterableVariableName": "data",
+              "valueIteratorVariableName": "value",
+              "keyIteratorVariableName": "",
+              "conditions": [
+                {
+                  "type": {
+                    "value": "BooleanVariable"
+                  },
+                  "parameters": [
+                    "check",
+                    "=",
+                    ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "BuiltinCommonInstructions::CompareNumbers"
+                  },
+                  "parameters": [
+                    "VariableChildCount(value.players)",
+                    "=",
+                    "0"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Multiplayer::QuickJoinWithLobbyID"
+                  },
+                  "parameters": [
+                    "",
+                    "value.id",
+                    "",
+                    "no"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetBooleanVariable"
+                  },
+                  "parameters": [
+                    "check",
+                    "True",
+                    ""
+                  ]
+                }
+              ]
+            }
+          ],
+          "variables": [
+            {
+              "name": "value",
+              "type": "structure",
+              "children": [
+                {
+                  "name": "id",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "name",
+                  "type": "string",
+                  "value": "0"
+                },
+                {
+                  "name": "players",
+                  "type": "array",
+                  "children": []
+                }
+              ]
+            },
+            {
+              "folded": true,
+              "name": "data",
+              "type": "structure",
+              "children": []
+            },
+            {
+              "name": "check",
+              "type": "boolean",
+              "value": false
+            }
+          ]
+        }
+      ],
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Add custom ICE candidate.",
+      "fullName": "Add custom ICE candidate",
+      "functionType": "Action",
+      "name": "AddCustomICECandidate",
+      "sentence": "Add custom ICE candidate _PARAM1_ , _PARAM2_ , _PARAM3_",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": [
+            "const address = eventsFunctionContext.getArgument(\"Address\");",
+            "const user = eventsFunctionContext.getArgument(\"User\");",
+            "const password = eventsFunctionContext.getArgument(\"Password\");",
+            "",
+            "if ( user && password ){",
+            "    gdjs.multiplayerPeerJsHelper.useCustomICECandidate(address , user , password );",
+            "} else {",
+            "    gdjs.multiplayerPeerJsHelper.useCustomICECandidate(address);        ",
+            "}"
+          ],
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "parameters": [
+        {
+          "description": "Address of candidate (example: \"stun:stun1.l.google.com:19302\")",
+          "name": "Address",
+          "type": "string"
+        },
+        {
+          "description": "User (optional)",
+          "name": "User",
+          "type": "string"
+        },
+        {
+          "description": "Password (optional)",
+          "name": "Password",
+          "type": "string"
+        }
+      ],
+      "objectGroups": []
+    },
+    {
+      "description": "Return project identifier.",
+      "fullName": "Project identifier",
+      "functionType": "StringExpression",
+      "name": "ProjectUUID",
+      "private": true,
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "eventsFunctionContext.returnValue = runtimeScene.getGame().getGameData().properties.projectUuid;",
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Return game version.",
+      "fullName": "Game version",
+      "functionType": "StringExpression",
+      "name": "GameVersion",
+      "private": true,
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "eventsFunctionContext.returnValue = runtimeScene.getGame().getGameData().properties.version;",
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [],
+      "objectGroups": []
+    },
+    {
+      "description": "Return true if game run in preview.",
+      "fullName": "Preview",
+      "functionType": "StringExpression",
+      "name": "IsPreview",
+      "private": true,
+      "sentence": "",
+      "events": [
+        {
+          "type": "BuiltinCommonInstructions::JsCode",
+          "inlineCode": "eventsFunctionContext.returnValue = runtimeScene.getGame().isPreview();",
+          "parameterObjects": "",
+          "useStrict": true,
+          "eventsSheetExpanded": false
+        }
+      ],
+      "expressionType": {
+        "type": "string"
+      },
+      "parameters": [],
+      "objectGroups": []
+    }
+  ],
+  "eventsFunctionsFolderStructure": {
+    "folderName": "__ROOT",
+    "children": [
+      {
+        "functionName": "Plug"
+      },
+      {
+        "functionName": "onFirstSceneLoaded"
+      },
+      {
+        "functionName": "Ready"
+      },
+      {
+        "functionName": "ConnectToBrokerServer"
+      },
+      {
+        "functionName": "JoinEmptyLobby"
+      },
+      {
+        "functionName": "JoinPrivateEmptyLobby"
+      },
+      {
+        "functionName": "AddCustomICECandidate"
+      },
+      {
+        "functionName": "ProjectUUID"
+      },
+      {
+        "functionName": "GameVersion"
+      },
+      {
+        "functionName": "IsPreview"
+      }
+    ]
+  },
+  "eventsBasedBehaviors": [],
+  "eventsBasedObjects": []
+}
