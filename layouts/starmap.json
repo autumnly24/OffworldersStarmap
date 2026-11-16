@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.38958562738274904,
+    "zoomFactor": 1.285621123678324,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -250,7 +250,7 @@
       "name": "DistanceFactor",
       "persistentUuid": "629e8e8c-c1e0-4388-b5ad-e4d0f409e422",
       "type": "number",
-      "value": 15
+      "value": 10
     },
     {
       "name": "GameTime",
@@ -270,22 +270,40 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 319,
+      "height": 363,
       "keepRatio": true,
       "layer": "",
       "name": "Star",
       "persistentUuid": "522be0d9-deae-463b-94b0-7dd80571b4b6",
-      "width": 319,
-      "x": 741,
+      "width": 363,
+      "x": 697,
       "y": 458,
       "zOrder": 1,
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": [
         {
+          "name": "SolarSystemSize",
+          "persistentUuid": "5d588255-7056-4b00-b4a5-5b05447aa42c",
+          "type": "number",
+          "value": 0.65
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "6771a93f-5ba6-4005-8eaf-979603280807",
+          "type": "string",
+          "value": "Asnary 31-A"
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "8497e1cc-8cc0-46de-ae34-c46f810f7a10",
+          "type": "string",
+          "value": "Yellow Dwarf"
+        },
+        {
           "name": "Description",
           "type": "string",
-          "value": "The Yellow Giant at the center of the titular Asnary 31-A System. \nSimilar to the historical Sol System's Star."
+          "value": "The Yellow Dwarf Star at the center of the Asnary System. \nIt is similar in size and age to the star in the historical Sol System."
         }
       ]
     },
@@ -347,8 +365,8 @@
       "layer": "Frame",
       "name": "InfoText",
       "persistentUuid": "a7be6e55-4d73-4a54-beb3-3d09f5756995",
-      "width": 301,
-      "x": 11,
+      "width": 293,
+      "x": 15,
       "y": 338,
       "zOrder": 3,
       "numberProperties": [],
@@ -403,228 +421,6 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 21,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Planet",
-      "persistentUuid": "99f50cdd-3d74-4b6b-8825-0cd72037705f",
-      "width": 21,
-      "x": 1049,
-      "y": 412,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Name",
-          "persistentUuid": "9916ba87-e12a-47dd-b9ba-98a2c68ef8de",
-          "type": "string",
-          "value": "Asnary 31-A-1"
-        },
-        {
-          "name": "OrbitDistance",
-          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
-          "type": "number",
-          "value": 300
-        },
-        {
-          "name": "StarToOrbit",
-          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
-          "type": "string",
-          "value": "Asnary 31-A"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 2,
-      "height": 31,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Planet",
-      "persistentUuid": "d4b5015a-d9d5-4caf-95bc-aea59dd27411",
-      "width": 31,
-      "x": 1109,
-      "y": 321,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "OrbitDistance",
-          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
-          "type": "number",
-          "value": 550
-        },
-        {
-          "name": "StarToOrbit",
-          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
-          "type": "string",
-          "value": "Asnary 31-A"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 5,
-      "height": 80,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Planet",
-      "persistentUuid": "e99313b1-4243-44bc-bfd7-be17f93239bb",
-      "width": 80,
-      "x": 1228,
-      "y": 126,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "OrbitDistance",
-          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
-          "type": "number",
-          "value": 820
-        },
-        {
-          "name": "StarToOrbit",
-          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
-          "type": "string",
-          "value": "Asnary 31-A"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 3,
-      "height": 39,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Planet",
-      "persistentUuid": "bfaa3cb8-dc93-4be7-b693-0efe14974e88",
-      "width": 39,
-      "x": 1131,
-      "y": 244,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "OrbitDistance",
-          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
-          "type": "number",
-          "value": 720
-        },
-        {
-          "name": "StarToOrbit",
-          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
-          "type": "string",
-          "value": "Asnary 31-A"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 7,
-      "height": 123,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Planet",
-      "persistentUuid": "e7fd5d0c-d3cb-4191-93f1-0e006a44028f",
-      "width": 123,
-      "x": 1291,
-      "y": 5,
-      "zOrder": 4,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "OrbitDistance",
-          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
-          "type": "number",
-          "value": 1000
-        },
-        {
-          "name": "StarToOrbit",
-          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
-          "type": "string",
-          "value": "Asnary 31-A"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 2,
-      "height": 9,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Moon",
-      "persistentUuid": "b617c3a9-8ece-4842-a60a-2a3c6bbc33bc",
-      "width": 9,
-      "x": 1075,
-      "y": 428,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "OrbitDistance",
-          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
-          "type": "number",
-          "value": 25
-        },
-        {
-          "name": "PlanetToOrbit",
-          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
-          "type": "string",
-          "value": "Asnary 31-A-1"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
-      "height": 8,
-      "keepRatio": true,
-      "layer": "",
-      "name": "Moon",
-      "persistentUuid": "740a0661-dd80-4c37-a573-e2a7967ccac0",
-      "width": 8,
-      "x": 1091,
-      "y": 415,
-      "zOrder": 5,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "Name",
-          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
-          "type": "string",
-          "value": "Lunis"
-        },
-        {
-          "name": "OrbitDistance",
-          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
-          "type": "number",
-          "value": 50
-        },
-        {
-          "name": "PlanetToOrbit",
-          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
-          "type": "string",
-          "value": "Asnary 31-A-1"
-        }
-      ]
     },
     {
       "angle": 0,
@@ -828,44 +624,14 @@
       "angle": 0,
       "customSize": true,
       "depth": 1,
-      "height": 12,
-      "keepRatio": true,
-      "layer": "",
-      "name": "SpaceStation",
-      "persistentUuid": "6c31bd22-6f8a-4b4e-8f73-68e89c5dec41",
-      "width": 12,
-      "x": 1103,
-      "y": 414,
-      "zOrder": 21,
-      "numberProperties": [],
-      "stringProperties": [],
-      "initialVariables": [
-        {
-          "name": "OrbitDistance",
-          "persistentUuid": "f538d82a-1cb3-4b9c-8179-676bf83c2b42",
-          "type": "number",
-          "value": 15
-        },
-        {
-          "name": "BodyToOrbit",
-          "persistentUuid": "f65e4bbf-dc9a-430d-b622-0be5bfe7ad7c",
-          "type": "string",
-          "value": "Lunis"
-        }
-      ]
-    },
-    {
-      "angle": 0,
-      "customSize": true,
-      "depth": 1,
       "height": 17,
       "keepRatio": true,
       "layer": "",
       "name": "Spaceship",
       "persistentUuid": "d41ce511-a3fa-4fe0-9d67-18f07f324788",
       "width": 23,
-      "x": 1153,
-      "y": 457,
+      "x": 1340,
+      "y": 597,
       "zOrder": 22,
       "numberProperties": [],
       "stringProperties": [],
@@ -1001,6 +767,1468 @@
       "numberProperties": [],
       "stringProperties": [],
       "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 28,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Planet",
+      "persistentUuid": "30f7474d-61a9-4435-8cde-29cfcd8293fc",
+      "width": 28,
+      "x": 1115,
+      "y": 399,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Classification",
+          "persistentUuid": "2ea65287-aaf4-4c75-a3f2-d5ccb7358eff",
+          "type": "string",
+          "value": "Planet"
+        },
+        {
+          "name": "Description",
+          "persistentUuid": "59bff603-8dad-48c3-ae53-94f808da19c1",
+          "type": "string",
+          "value": "A Hot, Desert Planet with a nauseating, toxic atmosphere and highly acidic red seas. The planet does have wildlife, though much of it is hostile. The planet is sparsely inhabited by mining colonies that seek to extract the planet’s rich mineral resources."
+        },
+        {
+          "name": "Habitation",
+          "persistentUuid": "ce73ec32-b294-49f1-ac84-c09b157b1a23",
+          "type": "string",
+          "value": "Sparsely Populated"
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "4376392e-f622-46bb-ae09-e0fce4a6f4f9",
+          "type": "string",
+          "value": "Desert"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "9916ba87-e12a-47dd-b9ba-98a2c68ef8de",
+          "type": "string",
+          "value": "Fusa"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
+          "type": "number",
+          "value": 300
+        },
+        {
+          "name": "StarToOrbit",
+          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
+          "type": "string",
+          "value": "Asnary 31-A"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 14,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "42e444ca-9507-4ee0-b370-f71a2b7fd67b",
+      "width": 14,
+      "x": 1131,
+      "y": 450,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "80fc5570-7e80-4fa4-a1a3-409ab84b7824",
+          "type": "string",
+          "value": "A Stormy, Deathly Toxic Moon where only extremophile lichens can survive. The Planet's Surface is made primarily of dark Iron-Rich Sediment and Rock."
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Alder"
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Fusa"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 9,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "8b662157-1120-49f6-ac5e-7704dcfa4ee0",
+      "width": 9,
+      "x": 1155,
+      "y": 431,
+      "zOrder": 34,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "80fc5570-7e80-4fa4-a1a3-409ab84b7824",
+          "type": "string",
+          "value": "A Moon covered by Shallow Oceans and small islands. While quite hot, it's in a survivable temperature range for some species, and it is mainly used as a research outpost for the early life that has evolved there."
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "5446a805-ea68-4312-9f59-b62cbf7daa1e",
+          "type": "string",
+          "value": "Shallows"
+        },
+        {
+          "name": "Habitation",
+          "persistentUuid": "aa360ff4-f8e6-45f2-9512-b1255de86de3",
+          "type": "string",
+          "value": "Sparsely Populated"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 30
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Aln"
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Fusa"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 32,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Planet",
+      "persistentUuid": "16281560-88c2-460f-9b5b-7715eb1f35bc",
+      "width": 32,
+      "x": 1247,
+      "y": 293,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "59bff603-8dad-48c3-ae53-94f808da19c1",
+          "type": "string",
+          "value": "A Humid, Swampy planet. Much of the planet’s flora is actually multiple organisms, working in symbiotic relationships, and all fauna seem to be descended from a single species of flat, fish-like organism that still dominates much of the shallow water ecosystems. The planet has a booming manufacturing industry."
+        },
+        {
+          "name": "Habitation",
+          "persistentUuid": "ce73ec32-b294-49f1-ac84-c09b157b1a23",
+          "type": "string",
+          "value": "Populated"
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "4376392e-f622-46bb-ae09-e0fce4a6f4f9",
+          "type": "string",
+          "value": "Swamp"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "9916ba87-e12a-47dd-b9ba-98a2c68ef8de",
+          "type": "string",
+          "value": "Silt"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
+          "type": "number",
+          "value": 470
+        },
+        {
+          "name": "StarToOrbit",
+          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
+          "type": "string",
+          "value": "Asnary 31-A"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 44,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Planet",
+      "persistentUuid": "85ef8e35-e37e-41dc-84bc-7ae75dcb7b64",
+      "width": 44,
+      "x": 1288,
+      "y": 173,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "59bff603-8dad-48c3-ae53-94f808da19c1",
+          "type": "string",
+          "value": "A Snowy Planet with a Tundra-esque biosphere, notable for the red colour of its plants. Much of the Fauna on the planet have been domesticated, but there are some large predators in the wild outside the outposts. The planet boasts mainly trading and military outposts."
+        },
+        {
+          "name": "Habitation",
+          "persistentUuid": "ce73ec32-b294-49f1-ac84-c09b157b1a23",
+          "type": "string",
+          "value": "Populated"
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "4376392e-f622-46bb-ae09-e0fce4a6f4f9",
+          "type": "string",
+          "value": "Tundra"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "9916ba87-e12a-47dd-b9ba-98a2c68ef8de",
+          "type": "string",
+          "value": "Verilia"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
+          "type": "number",
+          "value": 750
+        },
+        {
+          "name": "StarToOrbit",
+          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
+          "type": "string",
+          "value": "Asnary 31-A"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 14,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "a7c56ba1-2e0e-4705-aeb2-63df5b244a32",
+      "width": 14,
+      "x": 1339,
+      "y": 173,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "80fc5570-7e80-4fa4-a1a3-409ab84b7824",
+          "type": "string",
+          "value": "A Barren, Rocky Moon with No Atmosphere."
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 55
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Verilia"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Lunis"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 9,
+      "height": 136,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Planet",
+      "persistentUuid": "3667fa4c-df54-44af-943d-94b256d49a2b",
+      "width": 136,
+      "x": 1346,
+      "y": -30,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "59bff603-8dad-48c3-ae53-94f808da19c1",
+          "type": "string",
+          "value": "A Gaseous, Stormy Planet with a Teal-Green Hue."
+        },
+        {
+          "name": "Habitation",
+          "persistentUuid": "ce73ec32-b294-49f1-ac84-c09b157b1a23",
+          "type": "string",
+          "value": "N/A"
+        },
+        {
+          "name": "Classification",
+          "persistentUuid": "2ea65287-aaf4-4c75-a3f2-d5ccb7358eff",
+          "type": "string",
+          "value": "Gas Giant"
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "4376392e-f622-46bb-ae09-e0fce4a6f4f9",
+          "type": "string",
+          "value": "No Surface"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "9916ba87-e12a-47dd-b9ba-98a2c68ef8de",
+          "type": "string",
+          "value": "Elnin V"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
+          "type": "number",
+          "value": 1000
+        },
+        {
+          "name": "StarToOrbit",
+          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
+          "type": "string",
+          "value": "Asnary 31-A"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 13,
+      "height": 193,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Planet",
+      "persistentUuid": "2cf64a87-3d26-44db-b9b2-09d4c5cbc319",
+      "width": 193,
+      "x": 1527,
+      "y": -272,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "59bff603-8dad-48c3-ae53-94f808da19c1",
+          "type": "string",
+          "value": "A Gigantic Gas Planet with intense storms and a Coppery Hue. Due to strange magnetic fields, the planet contains floating “islands” of iron and copper. There have been attempts to extract the resources on this planet, but none have been successful due to the volatile conditions."
+        },
+        {
+          "name": "Habitation",
+          "persistentUuid": "ce73ec32-b294-49f1-ac84-c09b157b1a23",
+          "type": "string",
+          "value": "N/A"
+        },
+        {
+          "name": "Classification",
+          "persistentUuid": "2ea65287-aaf4-4c75-a3f2-d5ccb7358eff",
+          "type": "string",
+          "value": "Gas Giant"
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "4376392e-f622-46bb-ae09-e0fce4a6f4f9",
+          "type": "string",
+          "value": "Sparse Surface"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "9916ba87-e12a-47dd-b9ba-98a2c68ef8de",
+          "type": "string",
+          "value": "Tempest"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
+          "type": "number",
+          "value": 1400
+        },
+        {
+          "name": "StarToOrbit",
+          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
+          "type": "string",
+          "value": "Asnary 31-A"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 33,
+      "keepRatio": true,
+      "layer": "",
+      "name": "SpaceStation",
+      "persistentUuid": "d1fb458e-9fb0-4ae1-aab2-7ecc0bbe3de5",
+      "width": 33,
+      "x": 1484,
+      "y": 61,
+      "zOrder": 36,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Habitation",
+          "persistentUuid": "29b70f44-1aa5-484e-b4da-2f341702454a",
+          "type": "string",
+          "value": "Densely Populated"
+        },
+        {
+          "name": "Description",
+          "persistentUuid": "4d4ba247-746e-4377-afbf-f99f50e5d3f0",
+          "type": "string",
+          "value": "Megastation III is the last of the old Megastations, gigantic space stations the size of Cities which orbited Gas Giants and functioned as major Urban Centres. Though old and in slight disrepair, Megastation III remains the largest population center in the Asnary 31-A System."
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "f538d82a-1cb3-4b9c-8179-676bf83c2b42",
+          "type": "number",
+          "value": 90
+        },
+        {
+          "name": "BodyToOrbit",
+          "persistentUuid": "f65e4bbf-dc9a-430d-b622-0be5bfe7ad7c",
+          "type": "string",
+          "value": "Elnin V"
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "4dcb82be-c300-4bc2-b82d-d9cd42a81dcf",
+          "type": "string",
+          "value": "Urban"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "18885e51-eeb8-4ad8-af56-92c888148677",
+          "type": "string",
+          "value": "Megastation III"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 14,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "6369f890-4ffa-49b1-9048-1364c95b2cd5",
+      "width": 14,
+      "x": 1315,
+      "y": 6,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "80fc5570-7e80-4fa4-a1a3-409ab84b7824",
+          "type": "string",
+          "value": "This Moon was once home to a large mining colony run by Salvision Industries, but it is now abandoned for unknown reasons."
+        },
+        {
+          "name": "Habitation",
+          "persistentUuid": "aa360ff4-f8e6-45f2-9512-b1255de86de3",
+          "type": "string",
+          "value": "Abandoned"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 120
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Elnin V"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Ionus"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 9,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "f0645049-ec6c-43d3-90c0-1a304cacacbc",
+      "width": 9,
+      "x": 1292,
+      "y": -4,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 130
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Elnin V"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Vauni"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 13,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "c3b49fd7-e056-418f-ac6c-1967c01fc635",
+      "width": 13,
+      "x": 1269,
+      "y": -21,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Type",
+          "persistentUuid": "5446a805-ea68-4312-9f59-b62cbf7daa1e",
+          "type": "string",
+          "value": "Icy"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 150
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Elnin V"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Thile"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 0,
+      "height": 14,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "3260e192-57a3-4578-b6d4-effdaf2e3c0d",
+      "width": 14,
+      "x": 1496,
+      "y": -233,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Type",
+          "persistentUuid": "5446a805-ea68-4312-9f59-b62cbf7daa1e",
+          "type": "string",
+          "value": "Icy"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 130
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Tempest"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Skeln"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 23,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "3af3abad-e0d9-4a42-9974-2eab42fe9c2a",
+      "width": 23,
+      "x": 1459,
+      "y": -266,
+      "zOrder": 35,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "80fc5570-7e80-4fa4-a1a3-409ab84b7824",
+          "type": "string",
+          "value": "A Rocky, Dusty Moon home to the Terran Confederacy's Largest Training Camp."
+        },
+        {
+          "name": "Habitation",
+          "persistentUuid": "aa360ff4-f8e6-45f2-9512-b1255de86de3",
+          "type": "string",
+          "value": "Sparsely Populated"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 165
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Tempest"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Vitrik"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 255,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Star",
+      "persistentUuid": "7f34311c-8983-44f5-936d-48c436af66f5",
+      "width": 255,
+      "x": -2001,
+      "y": -2695,
+      "zOrder": 1,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "40a01b35-8802-42f5-b21f-7220e6142f52",
+          "type": "string",
+          "value": "The Red Dwarf Star at the center of the Rufira System. The Light it emits is slightly weaker than other stars."
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "6771a93f-5ba6-4005-8eaf-979603280807",
+          "type": "string",
+          "value": "Rufira 66-C"
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "8497e1cc-8cc0-46de-ae34-c46f810f7a10",
+          "type": "string",
+          "value": "Red Dwarf"
+        },
+        {
+          "name": "SolarSystemSize",
+          "persistentUuid": "5d588255-7056-4b00-b4a5-5b05447aa42c",
+          "type": "number",
+          "value": 0.5
+        }
+      ]
+    },
+    {
+      "angle": 321,
+      "customSize": false,
+      "height": 0,
+      "keepRatio": true,
+      "layer": "",
+      "name": "BigArrow",
+      "persistentUuid": "46cd7be1-07c2-4fb5-a932-d6eaaaf889e1",
+      "width": 0,
+      "x": -720,
+      "y": -1192,
+      "zOrder": 37,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": []
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 4,
+      "height": 57,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Planet",
+      "persistentUuid": "0af10316-b9a1-4c24-acd7-99eefe17e795",
+      "width": 57,
+      "x": -1536,
+      "y": -2245,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "59bff603-8dad-48c3-ae53-94f808da19c1",
+          "type": "string",
+          "value": "A Foggy Planet covered in Deep Ocean, notable for being rich in a resource required for the production of Drive Fuel. The Planet is dotted with gigantic megastructures built to extract this resource, similar to Oil Rigs."
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "9916ba87-e12a-47dd-b9ba-98a2c68ef8de",
+          "type": "string",
+          "value": "Obrus"
+        },
+        {
+          "name": "Habitation",
+          "persistentUuid": "ce73ec32-b294-49f1-ac84-c09b157b1a23",
+          "type": "string",
+          "value": "Sparsely Populated"
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "4376392e-f622-46bb-ae09-e0fce4a6f4f9",
+          "type": "string",
+          "value": "Ocean"
+        },
+        {
+          "name": "StarToOrbit",
+          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
+          "type": "string",
+          "value": "Rufira 66-C"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
+          "type": "number",
+          "value": 600
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 14,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "af529055-1022-49a2-931e-12a61cad997f",
+      "width": 14,
+      "x": -1470,
+      "y": -2275,
+      "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 70
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "5446a805-ea68-4312-9f59-b62cbf7daa1e",
+          "type": "string",
+          "value": "Icy"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Lacertae"
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Obrus"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 16,
+      "keepRatio": true,
+      "layer": "",
+      "name": "SpaceStation",
+      "persistentUuid": "ced7a7fd-b288-4c99-8f7b-14233f547efd",
+      "width": 16,
+      "x": -1464,
+      "y": -2212,
+      "zOrder": 39,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "4d4ba247-746e-4377-afbf-f99f50e5d3f0",
+          "type": "string",
+          "value": "A Trading Station with a decent permanent population."
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "18885e51-eeb8-4ad8-af56-92c888148677",
+          "type": "string",
+          "value": "Philanti Station"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "f538d82a-1cb3-4b9c-8179-676bf83c2b42",
+          "type": "number",
+          "value": 55
+        },
+        {
+          "name": "BodyToOrbit",
+          "persistentUuid": "f65e4bbf-dc9a-430d-b622-0be5bfe7ad7c",
+          "type": "string",
+          "value": "Obrus"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 37,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Planet",
+      "persistentUuid": "fbe792ca-2af6-489f-b0c6-70243df8f400",
+      "width": 37,
+      "x": -1602,
+      "y": -2321,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "59bff603-8dad-48c3-ae53-94f808da19c1",
+          "type": "string",
+          "value": "A Tropical, Shallow Ocean Planet with Coral-Like Flora that dominates both Land and Sea. The Planet's Sapient Species, the Cerakans, have been waging a brutal world war for over 25 years, the reason for which is no longer known."
+        },
+        {
+          "name": "Habitation",
+          "persistentUuid": "ce73ec32-b294-49f1-ac84-c09b157b1a23",
+          "type": "string",
+          "value": "Populated"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "9916ba87-e12a-47dd-b9ba-98a2c68ef8de",
+          "type": "string",
+          "value": "Kelek Barrier"
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "4376392e-f622-46bb-ae09-e0fce4a6f4f9",
+          "type": "string",
+          "value": "Shallows"
+        },
+        {
+          "name": "StarToOrbit",
+          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
+          "type": "string",
+          "value": "Rufira 66-C"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
+          "type": "number",
+          "value": 440
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 9,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "8867e3e0-cd1a-4515-aeeb-1ee6898742e0",
+      "width": 9,
+      "x": -1567,
+      "y": -2342,
+      "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Croyle"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 40
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Kelek Barrier"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 6,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "01d3f4f1-e20a-40cc-be85-095389423b7d",
+      "width": 6,
+      "x": -1558,
+      "y": -2363,
+      "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Habitation",
+          "persistentUuid": "aa360ff4-f8e6-45f2-9512-b1255de86de3",
+          "type": "string",
+          "value": "Sparsely Populated"
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "5446a805-ea68-4312-9f59-b62cbf7daa1e",
+          "type": "string",
+          "value": "Desert"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Orionis"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 60
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Kelek Barrier"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 11,
+      "height": 168,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Planet",
+      "persistentUuid": "2fc7e179-4768-48ac-a39b-fc38b3bb45aa",
+      "width": 168,
+      "x": -1252,
+      "y": -2011,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "StarToOrbit",
+          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
+          "type": "string",
+          "value": "Rufira 66-C"
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "4376392e-f622-46bb-ae09-e0fce4a6f4f9",
+          "type": "string",
+          "value": "Surfaced"
+        },
+        {
+          "name": "Classification",
+          "persistentUuid": "2ea65287-aaf4-4c75-a3f2-d5ccb7358eff",
+          "type": "string",
+          "value": "Gas Giant"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "9916ba87-e12a-47dd-b9ba-98a2c68ef8de",
+          "type": "string",
+          "value": "Lithos Prime"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
+          "type": "number",
+          "value": 950
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 18,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "90fdfbd4-b20c-4a0a-a550-713b157fc9bd",
+      "width": 18,
+      "x": -1114,
+      "y": -2036,
+      "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 120
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "5446a805-ea68-4312-9f59-b62cbf7daa1e",
+          "type": "string",
+          "value": "Icy"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Lillith"
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Lithos Prime"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 21,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Planet",
+      "persistentUuid": "c0189b3f-f861-4116-8342-407743dff3af",
+      "width": 21,
+      "x": -1008,
+      "y": -1795,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Classification",
+          "persistentUuid": "2ea65287-aaf4-4c75-a3f2-d5ccb7358eff",
+          "type": "string",
+          "value": "Dwarf Planet"
+        },
+        {
+          "name": "Description",
+          "persistentUuid": "59bff603-8dad-48c3-ae53-94f808da19c1",
+          "type": "string",
+          "value": "A Frigid Mining Outpost Planet, rich in mineral resources. There is evidence of an old civilization on this planet, with Ancient Technology sometimes being unearthed from the ice."
+        },
+        {
+          "name": "Habitation",
+          "persistentUuid": "ce73ec32-b294-49f1-ac84-c09b157b1a23",
+          "type": "string",
+          "value": "Sparsely Populated"
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "4376392e-f622-46bb-ae09-e0fce4a6f4f9",
+          "type": "string",
+          "value": "Icy"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "9916ba87-e12a-47dd-b9ba-98a2c68ef8de",
+          "type": "string",
+          "value": "Skadi"
+        },
+        {
+          "name": "StarToOrbit",
+          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
+          "type": "string",
+          "value": "Rufira 66-C"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
+          "type": "number",
+          "value": 1150
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 9,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "78919676-f82d-480c-92dd-e5a0ee202021",
+      "width": 9,
+      "x": -972,
+      "y": -1773,
+      "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "80fc5570-7e80-4fa4-a1a3-409ab84b7824",
+          "type": "string",
+          "value": "A Rocky, Cold Moon that manages to hold a stable population. It is primarily an Industrial Moon, housing Salvision's main Drive Fuel Manufacturing Plant."
+        },
+        {
+          "name": "Habitation",
+          "persistentUuid": "aa360ff4-f8e6-45f2-9512-b1255de86de3",
+          "type": "string",
+          "value": "Populated"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Silda"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 40
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Skadi"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 3,
+      "height": 37,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Planet",
+      "persistentUuid": "962d4b4b-8d98-483c-865f-6e4c5f33ee8e",
+      "width": 37,
+      "x": -1405,
+      "y": -2135,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "59bff603-8dad-48c3-ae53-94f808da19c1",
+          "type": "string",
+          "value": "The Primary Home of The Terran Confederacy, Helios IV is an Earthlike Planet, being home to many continents and regions, and with a notable golden hue to its plant-life. It is home to the Largest Cities in the Rufira System. "
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "4376392e-f622-46bb-ae09-e0fce4a6f4f9",
+          "type": "string",
+          "value": "Earthlike"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "9916ba87-e12a-47dd-b9ba-98a2c68ef8de",
+          "type": "string",
+          "value": "Helios IV"
+        },
+        {
+          "name": "Habitation",
+          "persistentUuid": "ce73ec32-b294-49f1-ac84-c09b157b1a23",
+          "type": "string",
+          "value": "Densely Populated"
+        },
+        {
+          "name": "StarToOrbit",
+          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
+          "type": "string",
+          "value": "Rufira 66-C"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
+          "type": "number",
+          "value": 750
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 18,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "c6d8fbb4-420a-4f1b-be2b-ac003ac8b5de",
+      "width": 18,
+      "x": -1078,
+      "y": -2074,
+      "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 140
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "5446a805-ea68-4312-9f59-b62cbf7daa1e",
+          "type": "string",
+          "value": "Icy"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Hydrus"
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Lithos Prime"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 12,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "3064d8bf-817a-4fc5-8d10-875a9822b5a1",
+      "width": 12,
+      "x": -1051,
+      "y": -2104,
+      "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "80fc5570-7e80-4fa4-a1a3-409ab84b7824",
+          "type": "string",
+          "value": "A Densely Forested Moon with a powerful electromagnetic field, which stops communications from reaching in or out of the moon's atmosphere. No Research Missions have returned."
+        },
+        {
+          "name": "Habitation",
+          "persistentUuid": "aa360ff4-f8e6-45f2-9512-b1255de86de3",
+          "type": "string",
+          "value": "Unknown"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 150
+        },
+        {
+          "name": "Type",
+          "persistentUuid": "5446a805-ea68-4312-9f59-b62cbf7daa1e",
+          "type": "string",
+          "value": "Forested"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Paratha"
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Lithos Prime"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 1,
+      "height": 9,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Moon",
+      "persistentUuid": "b16bfd1c-abc0-4379-bfe7-63a1220302c8",
+      "width": 9,
+      "x": -1362,
+      "y": -2145,
+      "zOrder": 38,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Name",
+          "persistentUuid": "f26e2732-8cdc-46bf-b16b-451e5cd8ce6f",
+          "type": "string",
+          "value": "Scela"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "0da32940-7550-4909-9e38-49c7ccd33de4",
+          "type": "number",
+          "value": 50
+        },
+        {
+          "name": "PlanetToOrbit",
+          "persistentUuid": "13c427a2-f573-4162-90cf-5b12682dc315",
+          "type": "string",
+          "value": "Helios IV"
+        }
+      ]
+    },
+    {
+      "angle": 0,
+      "customSize": true,
+      "depth": 2,
+      "height": 22,
+      "keepRatio": true,
+      "layer": "",
+      "name": "Planet",
+      "persistentUuid": "d39a2280-3bb6-49c0-9429-9cf0d9b6a6cd",
+      "width": 22,
+      "x": -1744,
+      "y": -2437,
+      "zOrder": 33,
+      "numberProperties": [],
+      "stringProperties": [],
+      "initialVariables": [
+        {
+          "name": "Description",
+          "persistentUuid": "59bff603-8dad-48c3-ae53-94f808da19c1",
+          "type": "string",
+          "value": "A Toxic Dwarf Planet, near-identical in Atmospheric and Mineral Makeup to the historic Sol System's 'Venus'. "
+        },
+        {
+          "name": "Classification",
+          "persistentUuid": "2ea65287-aaf4-4c75-a3f2-d5ccb7358eff",
+          "type": "string",
+          "value": "Dwarf Planet"
+        },
+        {
+          "name": "Name",
+          "persistentUuid": "9916ba87-e12a-47dd-b9ba-98a2c68ef8de",
+          "type": "string",
+          "value": "New Venus"
+        },
+        {
+          "name": "StarToOrbit",
+          "persistentUuid": "a1925bf4-545d-49c5-be52-b21debe38410",
+          "type": "string",
+          "value": "Rufira 66-C"
+        },
+        {
+          "name": "OrbitDistance",
+          "persistentUuid": "6d13010d-a68f-4490-ad07-9f383c177371",
+          "type": "number",
+          "value": 250
+        }
+      ]
     }
   ],
   "objects": [
@@ -1016,7 +2244,7 @@
           "name": "Name",
           "persistentUuid": "6771a93f-5ba6-4005-8eaf-979603280807",
           "type": "string",
-          "value": "Asnary 31-A"
+          "value": ""
         },
         {
           "name": "Classification",
@@ -1028,7 +2256,7 @@
           "name": "Type",
           "persistentUuid": "8497e1cc-8cc0-46de-ae34-c46f810f7a10",
           "type": "string",
-          "value": "Yellow"
+          "value": "Yellow Dwarf"
         },
         {
           "name": "Habitation",
@@ -1056,6 +2284,7 @@
         },
         {
           "name": "SolarSystemSize",
+          "persistentUuid": "5d588255-7056-4b00-b4a5-5b05447aa42c",
           "type": "number",
           "value": 0.5
         }
@@ -1188,6 +2417,7 @@
         },
         {
           "name": "Seed",
+          "persistentUuid": "09329e71-a119-41ed-93b1-c072f7b69be2",
           "type": "number",
           "value": 0
         }
@@ -1466,7 +2696,7 @@
       "string": "---",
       "font": "Rajdhani-Zzm3.ttf",
       "textAlignment": "center",
-      "characterSize": 28,
+      "characterSize": 24,
       "color": {
         "b": 0,
         "g": 106,
@@ -1490,7 +2720,7 @@
         "font": "Rajdhani-Zzm3.ttf",
         "textAlignment": "center",
         "verticalTextAlignment": "center",
-        "characterSize": 28,
+        "characterSize": 24,
         "lineHeight": 0,
         "color": "255;106;0"
       }
@@ -1638,6 +2868,7 @@
         },
         {
           "name": "Seed",
+          "persistentUuid": "bc6d905a-3b9f-4359-bc08-83b19297d246",
           "type": "number",
           "value": 0
         }
@@ -2895,6 +4126,7 @@
         },
         {
           "name": "Seed",
+          "persistentUuid": "72b1eba8-0f4d-4637-9758-43806d6e801e",
           "type": "number",
           "value": 0
         }
@@ -3606,6 +4838,81 @@
         "lineHeight": 0,
         "color": "255;106;0"
       }
+    },
+    {
+      "adaptCollisionMaskAutomatically": true,
+      "assetStoreId": "",
+      "name": "BigArrow",
+      "persistentUuid": "16b84f9f-bc38-431a-a19e-fe2c504c2c6f",
+      "type": "Sprite",
+      "updateIfNotVisible": false,
+      "variables": [],
+      "effects": [
+        {
+          "effectType": "Outline",
+          "name": "Outline",
+          "doubleParameters": {
+            "padding": 0,
+            "thickness": 2
+          },
+          "stringParameters": {
+            "color": "107;42;0"
+          },
+          "booleanParameters": {}
+        }
+      ],
+      "behaviors": [],
+      "animations": [
+        {
+          "name": "big_arrow",
+          "useMultipleDirections": false,
+          "directions": [
+            {
+              "looping": false,
+              "metadata": "{\"pskl\":{}}",
+              "timeBetweenFrames": 0.08,
+              "sprites": [
+                {
+                  "hasCustomCollisionMask": true,
+                  "image": "big_arrow.png",
+                  "points": [],
+                  "originPoint": {
+                    "name": "origine",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "centerPoint": {
+                    "automatic": true,
+                    "name": "centre",
+                    "x": 0,
+                    "y": 0
+                  },
+                  "customCollisionMask": [
+                    [
+                      {
+                        "x": 33,
+                        "y": 9
+                      },
+                      {
+                        "x": 167,
+                        "y": 9
+                      },
+                      {
+                        "x": 167,
+                        "y": 301
+                      },
+                      {
+                        "x": 33,
+                        "y": 301
+                      }
+                    ]
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
     }
   ],
   "objectsFolderStructure": {
@@ -3637,6 +4944,9 @@
           },
           {
             "objectName": "Spaceship"
+          },
+          {
+            "objectName": "BigArrow"
           }
         ]
       },
@@ -4066,7 +5376,7 @@
             "",
             "StarSystemLabel",
             "Star.CenterX()",
-            "Star.CenterY() - 1300",
+            "Star.CenterY() - (PolarGrid.Width() / 1.75)",
             ""
           ]
         },
@@ -4226,6 +5536,7 @@
       "comment": "Autosave"
     },
     {
+      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -6331,7 +7642,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Selection",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -6875,7 +8185,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Ship Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8005,7 +9314,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Planet Simulation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -8031,10 +9339,10 @@
                 "value": "StringObjectVariable"
               },
               "parameters": [
-                "Planet",
-                "StarToOrbit",
+                "Star",
+                "Name",
                 "=",
-                "Star.Name"
+                "Planet.StarToOrbit"
               ]
             }
           ],
@@ -8061,10 +9369,10 @@
                 "value": "StringObjectVariable"
               },
               "parameters": [
-                "Moon",
-                "PlanetToOrbit",
+                "Planet",
+                "Name",
                 "=",
-                "Planet.Name"
+                "Moon.PlanetToOrbit"
               ]
             }
           ],
@@ -8077,7 +9385,7 @@
                 "Moon",
                 "Planet",
                 "Moon.OrbitDistance",
-                "(GameTime * 2) / ((pow(Moon.OrbitDistance,2)/20) / 500) + Moon.OrbitOffset"
+                "(GameTime / 1.5) / ((pow((Moon.OrbitDistance - (Planet.Width()/2.5)),2)/30) / 1200) + Moon.OrbitOffset"
               ]
             }
           ]
@@ -8107,7 +9415,7 @@
                 "SpaceStation",
                 "OrbitalBodies",
                 "SpaceStation.OrbitDistance",
-                "GameTime * 35  + SpaceStation.OrbitOffset"
+                "GameTime * 30  + SpaceStation.OrbitOffset"
               ]
             }
           ]
@@ -8326,7 +9634,7 @@
       "isLocked": false,
       "name": "Frame",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {
@@ -8385,7 +9693,7 @@
       "isLocked": false,
       "name": "Cursor",
       "renderingType": "",
-      "visibility": true,
+      "visibility": false,
       "cameras": [],
       "effects": [
         {

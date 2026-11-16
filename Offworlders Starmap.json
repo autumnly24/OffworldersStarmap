@@ -569,6 +569,14 @@
         "name": "spaceship",
         "smoothed": true,
         "userAdded": false
+      },
+      {
+        "file": "big_arrow.png",
+        "kind": "image",
+        "metadata": "{\"localFilePath\":\"big_arrow.png\",\"extension\":\".png\"}",
+        "name": "big_arrow.png",
+        "smoothed": true,
+        "userAdded": false
       }
     ]
   },
