@@ -117,21 +117,6 @@
         "userAdded": false
       },
       {
-        "file": "PixelFont.fnt",
-        "kind": "bitmapFont",
-        "metadata": "",
-        "name": "PixelFont.fnt",
-        "userAdded": false
-      },
-      {
-        "file": "PixelFont.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "PixelFont.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
         "file": "Rajdhani-Zzm3.ttf",
         "kind": "font",
         "metadata": "",
@@ -163,16 +148,6 @@
         "userAdded": false
       },
       {
-        "file": "computer_hum.ogg",
-        "kind": "audio",
-        "metadata": "",
-        "name": "computer_hum.ogg",
-        "preloadAsMusic": false,
-        "preloadAsSound": false,
-        "preloadInCache": false,
-        "userAdded": false
-      },
-      {
         "file": "cursor_active.png",
         "kind": "image",
         "metadata": "",
@@ -186,7 +161,7 @@
         "metadata": "",
         "name": "mouse_click_sound.ogg",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -204,16 +179,8 @@
         "metadata": "",
         "name": "select_sound.ogg",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
-        "userAdded": false
-      },
-      {
-        "file": "pause_button.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "pause_button.png",
-        "smoothed": true,
         "userAdded": false
       },
       {
@@ -238,7 +205,7 @@
         "metadata": "",
         "name": "typing_beep.ogg",
         "preloadAsMusic": false,
-        "preloadAsSound": false,
+        "preloadAsSound": true,
         "preloadInCache": false,
         "userAdded": false
       },
@@ -255,14 +222,6 @@
         "kind": "image",
         "metadata": "",
         "name": "zoom_out_button.png",
-        "smoothed": false,
-        "userAdded": false
-      },
-      {
-        "file": "settings_button.png",
-        "kind": "image",
-        "metadata": "",
-        "name": "settings_button.png",
         "smoothed": false,
         "userAdded": false
       },
@@ -291,14 +250,6 @@
         "userAdded": false
       },
       {
-        "file": "assets/Debug.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\"}",
-        "name": "Debug",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
         "file": "space_station.png",
         "kind": "image",
         "metadata": "",
@@ -311,22 +262,6 @@
         "kind": "image",
         "metadata": "{\"localFilePath\":\"spaceship.png\",\"extension\":\".png\"}",
         "name": "spaceship.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "orange_box.png",
-        "kind": "image",
-        "metadata": "{\"localFilePath\":\"orange_box.png\",\"extension\":\".png\"}",
-        "name": "orange_box.png",
-        "smoothed": true,
-        "userAdded": false
-      },
-      {
-        "file": "assets/orange_box.png",
-        "kind": "image",
-        "metadata": "{\"extension\":\".png\",\"localFilePath\":\"assets/orange_box.png\"}",
-        "name": "orange_box",
         "smoothed": true,
         "userAdded": false
       },

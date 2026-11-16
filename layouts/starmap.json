@@ -241,12 +241,6 @@
       "value": true
     },
     {
-      "name": "HasFinishedLoading",
-      "persistentUuid": "462179dd-7f54-4e1b-bea8-a04697fb0148",
-      "type": "boolean",
-      "value": false
-    },
-    {
       "name": "DistanceFactor",
       "persistentUuid": "629e8e8c-c1e0-4388-b5ad-e4d0f409e422",
       "type": "number",
@@ -5068,6 +5062,16 @@
       "actions": [
         {
           "type": {
+            "value": "SetBooleanVariable"
+          },
+          "parameters": [
+            "HasFinishedLoading",
+            "False",
+            ""
+          ]
+        },
+        {
+          "type": {
             "value": "Create"
           },
           "parameters": [
@@ -5536,7 +5540,6 @@
       "comment": "Autosave"
     },
     {
-      "disabled": true,
       "type": "BuiltinCommonInstructions::Standard",
       "conditions": [
         {
@@ -5566,16 +5569,6 @@
           },
           "parameters": [
             "0.5"
-          ]
-        },
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "HasFinishedLoading",
-            "True",
-            ""
           ]
         },
         {
@@ -5793,6 +5786,61 @@
           "parameters": [
             "",
             "Paused",
+            "no",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SaveState::SetVariableSaveConfiguration"
+          },
+          "parameters": [
+            "",
+            "HasSelectedPosition",
+            "no",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SaveState::SetVariableSaveConfiguration"
+          },
+          "parameters": [
+            "",
+            "SelectedObjectUUID",
+            "no",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SaveState::SetVariableSaveConfiguration"
+          },
+          "parameters": [
+            "",
+            "SelectedX",
+            "no",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SaveState::SetVariableSaveConfiguration"
+          },
+          "parameters": [
+            "",
+            "SelectedY",
+            "no",
+            ""
+          ]
+        },
+        {
+          "type": {
+            "value": "SaveState::SetVariableSaveConfiguration"
+          },
+          "parameters": [
+            "",
+            "DistanceFactor",
             "no",
             ""
           ]
@@ -8185,6 +8233,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Ship Controls",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -9314,6 +9363,7 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
+      "folded": true,
       "name": "Planet Simulation",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
