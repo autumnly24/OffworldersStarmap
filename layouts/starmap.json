@@ -193,12 +193,6 @@
       "value": 0
     },
     {
-      "name": "WorldTime",
-      "persistentUuid": "07c63185-3851-4a70-b28e-9c0532515969",
-      "type": "number",
-      "value": 0
-    },
-    {
       "name": "SavedData",
       "persistentUuid": "e0476657-7625-4723-9827-0e523b0d3b6a",
       "type": "structure",
@@ -298,6 +292,12 @@
           ]
         }
       ]
+    },
+    {
+      "name": "ChartingPlayer",
+      "persistentUuid": "df9134e7-a530-461f-9bb6-29a18e5098ed",
+      "type": "number",
+      "value": 0
     }
   ],
   "instances": [
@@ -3149,10 +3149,10 @@
       "effects": [],
       "behaviors": [
         {
-          "name": "SaveConfiguration",
-          "type": "SaveState::SaveConfiguration",
-          "defaultProfilePersistence": "DoNotSave",
-          "persistedInProfiles": ""
+          "name": "MultiplayerObject",
+          "type": "Multiplayer::MultiplayerObjectBehavior",
+          "playerNumber": 0,
+          "actionOnPlayerDisconnect": "DestroyObject"
         }
       ],
       "animations": [
@@ -5528,16 +5528,6 @@
         },
         {
           "type": {
-            "value": "SetNumberVariable"
-          },
-          "parameters": [
-            "WorldTime",
-            "=",
-            "Time(\"timestamp\") / 1000"
-          ]
-        },
-        {
-          "type": {
             "value": "Hide"
           },
           "parameters": [
@@ -5587,6 +5577,14 @@
                 "",
                 "Multiplayer::CurrentLobbyID()",
                 ""
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::EndLobbyWhenHostLeaves"
+              },
+              "parameters": [
+                "yes"
               ]
             }
           ]
@@ -5931,7 +5929,6 @@
       "colorG": 176,
       "colorR": 74,
       "creationTime": 0,
-      "folded": true,
       "name": "Save & Load",
       "source": "",
       "type": "BuiltinCommonInstructions::Group",
@@ -9673,6 +9670,15 @@
             },
             {
               "type": {
+                "value": "Multiplayer::SendMessage"
+              },
+              "parameters": [
+                "\"UpdateSelected\"",
+                "\"Update\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
               },
               "parameters": [
@@ -9705,6 +9711,25 @@
               "parameters": [
                 "",
                 "ShowFinishTravelButton"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "ChartingPlayer"
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "ChartingPlayer",
+                "=",
+                "Multiplayer::CurrentPlayerNumber()"
               ]
             },
             {
@@ -9836,6 +9861,16 @@
             },
             {
               "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "ChartingPlayer",
+                "=",
+                "Multiplayer::CurrentPlayerNumber()"
+              ]
+            },
+            {
+              "type": {
                 "value": "BuiltinCommonInstructions::Once"
               },
               "parameters": []
@@ -9858,6 +9893,15 @@
               "actions": [
                 {
                   "type": {
+                    "value": "Multiplayer::TakeVariableOwnership"
+                  },
+                  "parameters": [
+                    "",
+                    "ShipOrbitingUUID"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
@@ -9872,6 +9916,33 @@
               "type": "BuiltinCommonInstructions::Standard",
               "conditions": [],
               "actions": [
+                {
+                  "type": {
+                    "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
+                  },
+                  "parameters": [
+                    "Spaceship",
+                    "MultiplayerObject"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Multiplayer::TakeVariableOwnership"
+                  },
+                  "parameters": [
+                    "",
+                    "HasArrived"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Multiplayer::TakeVariableOwnership"
+                  },
+                  "parameters": [
+                    "",
+                    "Paused"
+                  ]
+                },
                 {
                   "type": {
                     "value": "SetBooleanObjectVariable"
@@ -10013,6 +10084,15 @@
             },
             {
               "type": {
+                "value": "Multiplayer::SendMessage"
+              },
+              "parameters": [
+                "\"UpdateSelected\"",
+                "\"Update\""
+              ]
+            },
+            {
+              "type": {
                 "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
               },
               "parameters": [
@@ -10058,6 +10138,15 @@
             },
             {
               "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "ChartingPlayer"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetBooleanVariable"
               },
               "parameters": [
@@ -10084,6 +10173,16 @@
                 "ShipOrbitingUUID",
                 "=",
                 "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "ChartingPlayer",
+                "=",
+                "Multiplayer::CurrentPlayerNumber()"
               ]
             },
             {
@@ -10189,9 +10288,28 @@
                 "=",
                 "ShipOrbitingUUID"
               ]
+            },
+            {
+              "type": {
+                "value": "NumberVariable"
+              },
+              "parameters": [
+                "ChartingPlayer",
+                "=",
+                "Multiplayer::CurrentPlayerNumber()"
+              ]
             }
           ],
           "actions": [
+            {
+              "type": {
+                "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
+              },
+              "parameters": [
+                "Spaceship",
+                "MultiplayerObject"
+              ]
+            },
             {
               "type": {
                 "value": "PutAroundObject"
@@ -10467,7 +10585,7 @@
               "parameters": [
                 "GameTime",
                 "=",
-                "TimerElapsedTime(\"OrbitTick\") + WorldTime"
+                "TimerElapsedTime(\"OrbitTick\")"
               ]
             }
           ]
@@ -10491,7 +10609,7 @@
               "parameters": [
                 "GameTime",
                 "=",
-                "TimerElapsedTime(\"OrbitTick\") + WorldTime"
+                "TimerElapsedTime(\"OrbitTick\")"
               ]
             }
           ]
@@ -10644,6 +10762,24 @@
           "actions": [
             {
               "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "Paused"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
+              },
+              "parameters": [
+                "PauseButton",
+                "MultiplayerObject"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetBooleanVariable"
               },
               "parameters": [
@@ -10689,6 +10825,15 @@
           "actions": [
             {
               "type": {
+                "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
+              },
+              "parameters": [
+                "PauseButton",
+                "MultiplayerObject"
+              ]
+            },
+            {
+              "type": {
                 "value": "PauseTimer"
               },
               "parameters": [
@@ -10705,16 +10850,6 @@
                 "Animation",
                 "=",
                 "\"Play\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::StopSceneTween"
-              },
-              "parameters": [
-                "",
-                "\"UpdateGlobalTime\"",
-                ""
               ]
             }
           ]
@@ -10742,6 +10877,15 @@
           "actions": [
             {
               "type": {
+                "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
+              },
+              "parameters": [
+                "PauseButton",
+                "MultiplayerObject"
+              ]
+            },
+            {
+              "type": {
                 "value": "UnPauseTimer"
               },
               "parameters": [
@@ -10758,19 +10902,6 @@
                 "Animation",
                 "=",
                 "\"Pause\""
-              ]
-            },
-            {
-              "type": {
-                "value": "Tween::TweenSceneVariableNumber3"
-              },
-              "parameters": [
-                "",
-                "\"UpdateGlobalTime\"",
-                "WorldTime",
-                "Time(\"timestamp\") / 1000",
-                "\"easeInOutSine\"",
-                "2"
               ]
             }
           ]

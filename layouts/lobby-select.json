@@ -843,7 +843,7 @@
           "parameters": [
             "",
             "LobbyIDInput.Text::Value()",
-            "no",
+            "yes",
             "no"
           ]
         }

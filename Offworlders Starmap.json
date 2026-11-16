@@ -1,5 +1,5 @@
 {
-  "firstLayout": "Starmap",
+  "firstLayout": "Lobby Select",
   "previewLayout": "Lobby Select",
   "gdVersion": {
     "build": 287,
@@ -20,7 +20,7 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "",
-    "version": "1.0.1",
+    "version": "1.1.0",
     "name": "Offworlders Starmap",
     "description": "",
     "author": "Autumnly",
@@ -537,21 +537,21 @@
   "layouts": [
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/starmap"
+      "referenceTo": "/layouts/lobby-select"
     },
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
-      "referenceTo": "/layouts/lobby-select"
+      "referenceTo": "/layouts/starmap"
     }
   ],
   "layoutsFolderStructure": {
     "folderName": "__ROOT",
     "children": [
       {
-        "itemName": "Starmap"
+        "itemName": "Lobby Select"
       },
       {
-        "itemName": "Lobby Select"
+        "itemName": "Starmap"
       }
     ]
   },
@@ -602,6 +602,10 @@
     {
       "__REFERENCE_TO_SPLIT_OBJECT": true,
       "referenceTo": "/eventsFunctionsExtensions/clipboard"
+    },
+    {
+      "__REFERENCE_TO_SPLIT_OBJECT": true,
+      "referenceTo": "/eventsFunctionsExtensions/buttonstates"
     }
   ],
   "externalLayouts": [
