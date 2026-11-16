@@ -19,7 +19,7 @@
     "scaleMode": "linear",
     "sizeOnStartupMode": "",
     "templateSlug": "",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "name": "Offworlders Starmap",
     "description": "",
     "author": "Autumnly",
@@ -78,8 +78,12 @@
       "placement": "bottom-left",
       "showWatermark": false
     },
-    "authorIds": [],
-    "authorUsernames": [],
+    "authorIds": [
+      "oT58zwmaeOMEt3Lr06XMevLi1wi2"
+    ],
+    "authorUsernames": [
+      "Autumnly"
+    ],
     "categories": [],
     "playableDevices": [],
     "extensionProperties": [],

@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 1.285621123678324,
+    "zoomFactor": 0.15911838846839607,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -5060,16 +5060,6 @@
         }
       ],
       "actions": [
-        {
-          "type": {
-            "value": "SetBooleanVariable"
-          },
-          "parameters": [
-            "HasFinishedLoading",
-            "False",
-            ""
-          ]
-        },
         {
           "type": {
             "value": "Create"
