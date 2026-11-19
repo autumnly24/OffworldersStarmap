@@ -21,7 +21,7 @@
     "gridColor": 10401023,
     "gridAlpha": 0.8,
     "snap": false,
-    "zoomFactor": 0.47535850871272545,
+    "zoomFactor": 0.18781732880531699,
     "windowMask": false,
     "selectedLayer": "",
     "gameEditorMode": "instances-editor"
@@ -254,7 +254,6 @@
           ]
         },
         {
-          "folded": true,
           "name": "Ship",
           "persistentUuid": "f86884ab-045e-47fe-a412-28b7445ffcb5",
           "type": "structure",
@@ -276,6 +275,11 @@
               "persistentUuid": "2ec59cca-1db6-400a-965a-f7de84ba1862",
               "type": "string",
               "value": ""
+            },
+            {
+              "name": "ShouldOrbit",
+              "type": "number",
+              "value": 0
             },
             {
               "name": "X",
@@ -5955,6 +5959,27 @@
               "parameters": [
                 ""
               ]
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Or"
+              },
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Multiplayer::IsLobbyGameRunning"
+                  },
+                  "parameters": []
+                },
+                {
+                  "type": {
+                    "value": "Multiplayer::IsPlayerHost"
+                  },
+                  "parameters": []
+                }
+              ]
             }
           ],
           "actions": [
@@ -6089,6 +6114,17 @@
                 "",
                 "SavedData.Camera.CameraZoom"
               ]
+            },
+            {
+              "type": {
+                "value": "ReadNumberFromStorage"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"ShouldOrbit\"",
+                "",
+                "SavedData.Ship.ShouldOrbit"
+              ]
             }
           ],
           "events": [
@@ -6112,6 +6148,16 @@
                   },
                   "parameters": [
                     "SavedData.Settings.HasSavedBefore",
+                    "=",
+                    "1"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Ship.ShouldOrbit",
                     "=",
                     "1"
                   ]
@@ -6699,6 +6745,16 @@
                 "\"Settings\"",
                 "\"HasSavedBefore\"",
                 "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "EcrireFichierExp"
+              },
+              "parameters": [
+                "\"Save\"",
+                "\"ShouldOrbit\"",
+                "SavedData.Ship.ShouldOrbit"
               ]
             }
           ],
@@ -9547,6 +9603,15 @@
             },
             {
               "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "SavedData.Ship.ShouldOrbit"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetBooleanVariable"
               },
               "parameters": [
@@ -9563,6 +9628,16 @@
                 "ShipOrbitingUUID",
                 "=",
                 "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SavedData.Ship.ShouldOrbit",
+                "=",
+                "0"
               ]
             },
             {
@@ -9670,15 +9745,6 @@
             },
             {
               "type": {
-                "value": "Multiplayer::SendMessage"
-              },
-              "parameters": [
-                "\"UpdateSelected\"",
-                "\"Update\""
-              ]
-            },
-            {
-              "type": {
                 "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
               },
               "parameters": [
@@ -9724,6 +9790,15 @@
             },
             {
               "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "SavedData.Ship.ShouldOrbit"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetNumberVariable"
               },
               "parameters": [
@@ -9761,6 +9836,16 @@
                 "ShipOrbitingUUID",
                 "=",
                 "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SavedData.Ship.ShouldOrbit",
+                "=",
+                "0"
               ]
             },
             {
@@ -9861,12 +9946,27 @@
             },
             {
               "type": {
-                "value": "NumberVariable"
+                "value": "BuiltinCommonInstructions::Or"
               },
-              "parameters": [
-                "ChartingPlayer",
-                "=",
-                "Multiplayer::CurrentPlayerNumber()"
+              "parameters": [],
+              "subInstructions": [
+                {
+                  "type": {
+                    "value": "NumberVariable"
+                  },
+                  "parameters": [
+                    "ChartingPlayer",
+                    "=",
+                    "Multiplayer::CurrentPlayerNumber()"
+                  ]
+                },
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Multiplayer::IsLobbyGameRunning"
+                  },
+                  "parameters": []
+                }
               ]
             },
             {
@@ -9902,12 +10002,85 @@
                 },
                 {
                   "type": {
+                    "value": "Multiplayer::TakeVariableOwnership"
+                  },
+                  "parameters": [
+                    "",
+                    "SavedData.Ship.ShouldOrbit"
+                  ]
+                },
+                {
+                  "type": {
                     "value": "SetStringVariable"
                   },
                   "parameters": [
                     "ShipOrbitingUUID",
                     "=",
                     "LocalSavedData.SelectedObjectUUID"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Ship.ShouldOrbit",
+                    "=",
+                    "1"
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "BuiltinCommonInstructions::Standard",
+              "conditions": [
+                {
+                  "type": {
+                    "inverted": true,
+                    "value": "Visible"
+                  },
+                  "parameters": [
+                    "SelectionBox"
+                  ]
+                }
+              ],
+              "actions": [
+                {
+                  "type": {
+                    "value": "Multiplayer::TakeVariableOwnership"
+                  },
+                  "parameters": [
+                    "",
+                    "ShipOrbitingUUID"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Multiplayer::TakeVariableOwnership"
+                  },
+                  "parameters": [
+                    "",
+                    "SavedData.Ship.ShouldOrbit"
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetStringVariable"
+                  },
+                  "parameters": [
+                    "ShipOrbitingUUID",
+                    "=",
+                    "\"\""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "SetNumberVariable"
+                  },
+                  "parameters": [
+                    "SavedData.Ship.ShouldOrbit",
+                    "=",
+                    "0"
                   ]
                 }
               ]
@@ -9972,6 +10145,14 @@
                     "Paused",
                     "False",
                     ""
+                  ]
+                },
+                {
+                  "type": {
+                    "value": "Wait"
+                  },
+                  "parameters": [
+                    "1"
                   ]
                 },
                 {
@@ -10084,15 +10265,6 @@
             },
             {
               "type": {
-                "value": "Multiplayer::SendMessage"
-              },
-              "parameters": [
-                "\"UpdateSelected\"",
-                "\"Update\""
-              ]
-            },
-            {
-              "type": {
                 "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
               },
               "parameters": [
@@ -10147,6 +10319,15 @@
             },
             {
               "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "SavedData.Ship.ShouldOrbit"
+              ]
+            },
+            {
+              "type": {
                 "value": "SetBooleanVariable"
               },
               "parameters": [
@@ -10173,6 +10354,16 @@
                 "ShipOrbitingUUID",
                 "=",
                 "\"\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetNumberVariable"
+              },
+              "parameters": [
+                "SavedData.Ship.ShouldOrbit",
+                "=",
+                "0"
               ]
             },
             {
@@ -10379,7 +10570,112 @@
             },
             {
               "type": {
+                "value": "Multiplayer::IsLobbyGameRunning"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
                 "value": "Multiplayer::IsPlayerHost"
+              },
+              "parameters": []
+            },
+            {
+              "type": {
+                "value": "BuiltinCommonInstructions::Once"
+              },
+              "parameters": []
+            }
+          ],
+          "actions": [
+            {
+              "type": {
+                "value": "PlaySound"
+              },
+              "parameters": [
+                "",
+                "typing_beep.ogg",
+                "",
+                "25",
+                "1"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::MultiplayerObjectBehavior::TakeObjectOwnership"
+              },
+              "parameters": [
+                "Spaceship",
+                "MultiplayerObject"
+              ]
+            },
+            {
+              "type": {
+                "value": "Multiplayer::TakeVariableOwnership"
+              },
+              "parameters": [
+                "",
+                "ShowFinishTravelButton"
+              ]
+            },
+            {
+              "type": {
+                "value": "Tween::ResumeTween"
+              },
+              "parameters": [
+                "Spaceship",
+                "Tween",
+                "\"TravelShip\""
+              ]
+            },
+            {
+              "type": {
+                "value": "SetBooleanVariable"
+              },
+              "parameters": [
+                "ShowFinishTravelButton",
+                "False",
+                ""
+              ]
+            }
+          ]
+        },
+        {
+          "type": "BuiltinCommonInstructions::Standard",
+          "conditions": [
+            {
+              "type": {
+                "value": "MouseButtonFromTextPressed"
+              },
+              "parameters": [
+                "",
+                "\"Left\""
+              ]
+            },
+            {
+              "type": {
+                "value": "CollisionNP"
+              },
+              "parameters": [
+                "Cursor",
+                "FinishTravelButton",
+                "",
+                "",
+                "yes"
+              ]
+            },
+            {
+              "type": {
+                "value": "Visible"
+              },
+              "parameters": [
+                "FinishTravelButton"
+              ]
+            },
+            {
+              "type": {
+                "inverted": true,
+                "value": "Multiplayer::IsLobbyGameRunning"
               },
               "parameters": []
             },
